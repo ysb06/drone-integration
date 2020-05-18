@@ -1,0 +1,36 @@
+#drone-jacket {
+    padding-top: 15vh;
+}
+
+#drone-jacket .temp-prototype {
+    width: 60vw;
+    margin: 0 auto;
+}
+
+#drone-jacket .temp-prototype img {
+    width: 100%;
+    margin-bottom: 10vh;
+}
+
+/*========================================*/
+
+#drone-jacket .content {
+    width: 60vw;
+
+    margin: 10vh auto;
+
+    display: flex;
+    justify-content: space-between;
+    
+    font-size: 1.25rem;
+}
+
+#drone-jacket .content .temp-img {
+    width: 40vmin;
+    height: 40vmin;
+    background-color: yellow;
+}
+
+#drone-jacket .content .text-content {
+    margin: 5vh 5vw;
+}
