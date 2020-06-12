@@ -1,6 +1,32 @@
+/*나눔 스퀘어*/
+@font-face {
+  font-family: 'NanumSquare';
+  src: url(./font/NanumSquareR.ttf) format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'NanumSquare';
+  src: url(./font/NanumSquareB.ttf) format('truetype');
+  font-weight: bold;
+}
+
+/* 나눔바른고딕 */
+@font-face {
+  font-family: 'NanumBarunGothic';
+  src: url(./font/NanumBarunGothic.ttf) format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  src: url(./font/NanumBarunGothicBold.ttf) format('truetype');
+  font-weight: bold;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, 'NanumSquare', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;

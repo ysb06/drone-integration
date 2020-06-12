@@ -15,12 +15,13 @@
 /*========================================*/
 
 #drone-jacket .content {
-    width: 60vw;
+    width: 1152px;
 
-    margin: 10vh auto;
+    margin: 5vh auto;
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
     
     font-size: 1.25rem;
 }
@@ -29,6 +30,11 @@
     width: 40vmin;
     height: 40vmin;
     background-color: yellow;
+}
+
+#drone-jacket .content img {
+    max-width: 432px;
+    height: auto;
 }
 
 #drone-jacket .content .text-content {

@@ -11,7 +11,7 @@ class MainDroneJacket extends Component {
                     </div>
 
                     <div className="content">
-                        <div className="temp-img" />
+                        <img src="/image/page-jacket-3.jpg" alt="재킷 이미지 3" />
                         <div className="text-content">
                             <h1>Upgrade Functionalities</h1>
                             <p>팬텀4와 매빅2에 드론 재킷을 입히면 한층 업그레이드된 기능을 구현할 수 있습니다.</p>
@@ -32,11 +32,11 @@ class MainDroneJacket extends Component {
                                 <li>피규어를 드론에 태울 수 있는 전용 어댑터를 제공합니다.</li>
                             </ul>
                         </div>
-                        <div className="temp-img" />
+                        <img src="/image/prototype/page-jacket-3.jpg" alt="재킷 이미지 1" />
                     </div>
 
                     <div className="content">
-                        <div className="temp-img" />
+                        <img src="/image/page-jacket-2.jpg" alt="재킷 이미지 2" />
                         <div className="text-content">
                             <h1>Colorful Personality</h1>
                             <p>팬텀4와 매빅2에 다양한 색상의 드론 재킷을 입히면 당신의 개성을 표현할 수 있습니다.</p>
