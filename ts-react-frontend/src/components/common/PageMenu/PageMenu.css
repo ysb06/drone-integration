@@ -1,0 +1,36 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 12vw;
+    width: 76vw;
+    height: 10vh;
+    z-index: 2;
+    
+    margin-right: 12vw;
+}
+
+nav ul {
+    height: inherit;
+    width: 58vw;
+
+    margin: 0 auto;
+    padding: 0;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    align-self: center;
+
+    color: white;
+    text-decoration: none;
+    font-size: 2.75vmin;
+    font-weight: bold;
+}
+
+.menu-item .button {
+    width: 16vw;
+    text-align: center;
+}
