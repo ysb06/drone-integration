@@ -87,6 +87,7 @@
 
 #drone-jacket-page .summary {
     max-width: 1280px;
+    height: 580px;
 
     margin: 0 auto;
 
@@ -99,11 +100,14 @@
     width: 500px;
     height: 500px;
     margin: 40px;
+
+    display: flex;
+    align-items: center;
 }
 
 #drone-jacket-page .summary-image img {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 #drone-jacket-page .summary-text {
