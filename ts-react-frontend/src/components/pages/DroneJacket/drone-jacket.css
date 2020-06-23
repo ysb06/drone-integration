@@ -1,0 +1,115 @@
+/* drone jacket에서만 적용되도록 수정 */
+#drone-jacket-page .headline {
+    max-width: 1280px;
+
+    margin: 0 auto 75px auto;
+}
+
+#drone-jacket-page .headline h1 {
+    font-family: Arial;
+    font-size: 4rem;
+
+    margin-left: 40px;
+}
+
+#drone-jacket-page .headline-content {
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#drone-jacket-page .headline-text {
+    max-width: 615px;
+    height: 100%;
+
+    margin: 40px;
+
+    font-size: 1.5rem;
+}
+
+#drone-jacket-page .headline-text p {
+    margin: 0;
+}
+
+#drone-jacket-page .headline-image {
+    max-width: 505px;
+
+    margin: 40px;
+}
+
+#drone-jacket-page .headline-image img {
+    max-width: 100%;
+}
+
+#drone-jacket-page .purchase-button {
+    width: 250px;
+    height: 65px;
+
+    margin-top: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    text-decoration: none;
+
+    background-color: #900020;
+}
+
+#drone-jacket-page .headline a {
+    text-decoration: none;
+}
+
+
+/* 요약 파트 스타일 */
+
+#drone-jacket-page .summary-background-b {
+    width: 100%;
+    background-color: #1F242F;
+
+    color: whitesmoke;
+}
+
+#drone-jacket-page .summary-background-w {
+    width: 100%;
+    background-color: white;
+}
+
+#drone-jacket-page .summary-background-g {
+    width: 100%;
+    background-color: #F0F1F5;
+}
+
+#drone-jacket-page .summary {
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#drone-jacket-page .summary-image {
+    width: 500px;
+    height: 500px;
+    margin: 40px;
+}
+
+#drone-jacket-page .summary-image img {
+    width: 100%;
+    height: 100%;
+}
+
+#drone-jacket-page .summary-text {
+    margin: 40px auto;
+}
+
+#drone-jacket-page .summary-text h2 {
+    font-size: 2rem;
+}

@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Route, BrowserRouter } from 'react-router-dom';
-import './index.css';
 import * as serviceWorker from './serviceWorker';
-import Root from './routes/Root';
-import DroneJacket from './routes/DroneJacket';
+
+import './index.css';
+import './components/common/common-header.css';
+import './components/pages/common-pages.css';
+
+import Router from './routes';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Route path="/" exact component={Root} />
-      <Route path="/drone-jacket" component={DroneJacket} />
-    </BrowserRouter>
+    <Router />
   </React.StrictMode>,
   document.getElementById('app')
 );
