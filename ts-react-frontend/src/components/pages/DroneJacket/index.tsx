@@ -50,7 +50,7 @@ class DroneJacket extends Component {
                                 </div>
                                 <div className="summary-text">
                                     <h2>당신의 개성을 표현할 수 있는 <br />색상을 입혀 보세요</h2>
-                                    <p>총 8개의 다양한 색상을 선택할 수 있습니다</p>
+                                    <p>Phantom 4 용으로는 총 8종, Mavic 2용으로는 2종의 다양한 색상을 선택할 수 있습니다</p>
                                 </div>
                             </div>
                         </div>
@@ -79,7 +79,7 @@ class DroneJacket extends Component {
                     </section>
                 </main>
                 <footer>
-                    <img src="image/prototype/footer.png" style={{maxWidth: '100%', marginTop: '200px'}} alt="Main Page"/>
+                    <img src="image/prototype/footer.png" style={{ maxWidth: '100%', marginTop: '200px' }} alt="Main Page" />
                 </footer>
             </div>
         );
