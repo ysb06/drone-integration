@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 
 import './index.css';
-import './components/common/common-header.css';
 import './components/pages/common-pages.css';
 
 import Router from './routes';
