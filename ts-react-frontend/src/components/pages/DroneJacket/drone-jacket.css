@@ -1,14 +1,22 @@
+#drone-jacket-page .headline h1 {
+    font-family: Arial;
+    font-size: 4rem;
+}
+
+#drone-jacket-page h2 {
+    font-size: 2rem;
+}
+
+#drone-jacket-page h3 {
+    font-size: 2.5rem;
+}
+
+/* Headline */
+
 #drone-jacket-page .headline {
     max-width: 1280px;
 
     margin: 0 auto 75px auto;
-}
-
-#drone-jacket-page .headline h1 {
-    font-family: Arial;
-    font-size: 4rem;
-
-    margin-left: 40px;
 }
 
 #drone-jacket-page .headline-content {
@@ -41,23 +49,8 @@
     max-width: 100%;
 }
 
-#drone-jacket-page .purchase-button {
-    width: 250px;
-    height: 65px;
-
-    margin-top: 50px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-    color: white;
-    font-weight: bold;
-    border-radius: 15px;
-    font-size: 1.5rem;
-    text-decoration: none;
-
-    background-color: #900020;
+#drone-jacket-page .button-container {
+    margin: 50px 0;
 }
 
 #drone-jacket-page .headline a {
@@ -74,14 +67,33 @@
     color: whitesmoke;
 }
 
+#drone-jacket-page .summary-background-1 {
+    width: 100%;
+    background-image: url(./image/page-jacket-tb1.png);
+    background-size: 100%;
+}
+
 #drone-jacket-page .summary-background-w {
     width: 100%;
     background-color: white;
 }
 
+#drone-jacket-page .summary-background-2 {
+    width: 100%;
+    background-image: url(./image/page-jacket-tb2.png);
+    background-size: 100%;
+}
+
 #drone-jacket-page .summary-background-g {
     width: 100%;
     background-color: #F0F1F5;
+}
+
+#drone-jacket-page .summary-background-3 {
+    width: 100%;
+    background-color: black;
+
+    color: whitesmoke;
 }
 
 #drone-jacket-page .summary {
@@ -113,10 +125,18 @@
     margin: 40px auto;
 }
 
-#drone-jacket-page .summary-text h2 {
-    font-size: 2rem;
+
+/* 추천 섹션 스타일 */
+
+#drone-jacket-page .recommendation {
+    width: 1000px;
+    margin: 100px auto;
 }
 
+#drone-jacket-page .recommendation li {
+    font-size: 1.5rem;
+    margin: 1rem auto;
+}
 
 
 /* 세부 전공 스타일 */
@@ -127,16 +147,28 @@
     margin: 150px auto;
 }
 
+#drone-jacket-page .details h3 {
+    text-align: center;
+}
+
+#drone-jacket-page .details-paragraph {
+    margin: 75px auto;
+}
+
+#drone-jacket-page .details-paragraph iframe {
+    margin: 0 auto;
+}
+
 #drone-jacket-page .details-image {
     font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
 
-    margin-top: 1.5vh;
+    margin: 5vh auto;
 }
 
 #drone-jacket-page .details-image img {
-    max-width: 75%;
+    max-width: 850px;
     max-height: 100%;
 }
 
@@ -149,13 +181,93 @@
     margin: 0 0.5%;
 }
 
-#drone-jacket-page .details h2 {
-    margin-top: 100px;
-
-    font-size: 3rem;
-    text-align: center;
-}
-
 #drone-jacket-page .details p {
     font-size: 1.5rem;
+}
+
+
+/* 스펙 섹션 */
+
+#drone-jacket-page .spec {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+#drone-jacket-page .spec h2 {
+    font-size: 2rem;
+}
+
+#drone-jacket-page .spec table {
+    max-width: 100%;
+
+    margin: 0 auto;
+
+    font-size: 1.5rem;
+}
+
+#drone-jacket-page .spec td {
+    border-top: 1px solid white;
+
+    padding: 15px;
+}
+
+#drone-jacket-page .spec .title-column {
+    width: 350px;
+
+    background-color: #4A378A;
+
+    color: whitesmoke;
+}
+
+#drone-jacket-page .spec .content-column {
+    width: 870px;
+    background-color: white;
+}
+
+#drone-jacket-page .spec-warning {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+/* 가격 섹션 */
+
+#drone-jacket-page .price-guide {
+    width: 1280px;
+    margin: 100px auto;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#drone-jacket-page .price-guide h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+#drone-jacket-page .price-guide h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+#drone-jacket-page .price-guide-img {
+    width: 500px;
+    margin: 30px auto;
+}
+
+#drone-jacket-page .price-guide img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#drone-jacket-page .price-guide p {
+    margin: 5px;
+    font-size: 1.25rem;
+}
+
+#drone-jacket-page .price-guide a {
+    text-decoration: none;
 }

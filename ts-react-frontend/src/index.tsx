@@ -7,7 +7,6 @@ import './components/pages/common-pages.css';
 
 import Router from './routes';
 
-
 ReactDOM.render(
   <React.StrictMode>
     <Router />

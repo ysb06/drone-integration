@@ -49,6 +49,7 @@
     margin: 0;
     text-align: center;
     font-weight: normal;
+    cursor: pointer;
 }
 
 #main-page .video-player {

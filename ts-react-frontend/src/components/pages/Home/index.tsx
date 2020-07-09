@@ -52,7 +52,7 @@ class Home extends Component<HomeProps, HomeState> {
                                 </div>
                             </Link>
                             <div className="representative-item">
-                                <img src="image/page-jacket-2.jpg" alt="Drone Jacket" /><br />
+                                <img src="image/page-main-3.gif" alt="Drone Jacket" /><br />
                                 <p>Pick it!</p>
                             </div>
                             <div className="representative-item">
@@ -71,7 +71,7 @@ class Home extends Component<HomeProps, HomeState> {
 
     Video_Element: JSX.Element =
         <div className="video-player" onClick={this.onClickVideoExitButton.bind(this)}>
-            <iframe title="drone-jacket" width="1280" height="720" src="https://www.youtube.com/embed/5o-l5vjOavA" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe title="drone-jacket" width="1280" height="720" src="https://www.youtube.com/embed/5o-l5vjOavA?amp;autoplay=1" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>;
 }
 
