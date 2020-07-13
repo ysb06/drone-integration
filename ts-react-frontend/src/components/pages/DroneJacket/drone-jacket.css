@@ -4,11 +4,11 @@
 }
 
 #drone-jacket-page h2 {
-    font-size: 2rem;
+    font-size: 2.25rem;
 }
 
 #drone-jacket-page h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 /* Headline */
@@ -47,6 +47,8 @@
 
 #drone-jacket-page .headline-image img {
     max-width: 100%;
+
+    border: 1px solid gray;
 }
 
 #drone-jacket-page .button-container {
@@ -160,14 +162,54 @@
     text-align: center;
 }
 
+#drone-jacket-page .details h3::before {
+    content: "\201C \A";
+    white-space: pre;
+
+    font-size: 5rem;
+    font-family: 'NanumBarunGothic';
+    color: #B3B3B3;
+    
+    display: block;
+}
+
+#drone-jacket-page .details h3::after {
+    content: "\A\A \201D";
+    white-space: pre;
+
+    font-size: 5rem;
+    font-family: 'NanumBarunGothic';
+    color: #B3B3B3;
+    
+    display: block;
+}
+
+#drone-jacket-page .details p {
+    margin: 100px auto;
+    font-size: 1.5rem;
+}
+
+#drone-jacket-page .details-title-deco {
+    font-size: 3rem;
+    text-align: center;
+}
+
 #drone-jacket-page .details-paragraph {
-    margin-bottom: 100px;
+    margin: 100px auto 300px auto;
+
+    line-height: 250%;
+}
+
+#drone-jacket-page .details-paragraph ul {
+    position: relative;
+    top: -50px;
+    /* 깔끔하지 않음 */
 }
 
 #drone-jacket-page .details-paragraph li {
-    margin: 10px;
     font-size: 1.5rem;
     font-weight: bold;
+    line-height: 250%;
 }
 
 #drone-jacket-page .details-paragraph iframe {
@@ -175,6 +217,8 @@
 }
 
 #drone-jacket-page .details-image {
+    margin: 50px auto;
+
     font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
@@ -183,13 +227,10 @@
 #drone-jacket-page .details-image img {
     max-width: 850px;
     max-height: 100%;
-    
-    margin-top: 50px;
-    margin-bottom: 15px;
 }
 
 #drone-jacket-page .details-image iframe {
-    margin-top: 25px;
+    max-width: 850px;
 }
 
 #drone-jacket-page .details-image .double-image img {
@@ -199,10 +240,6 @@
     그림 사이즈가 달라질때마다 변경해야 함
     */
     margin: 0 0.5%;
-}
-
-#drone-jacket-page .details p {
-    font-size: 1.5rem;
 }
 
 
@@ -292,13 +329,15 @@
 }
 
 #drone-jacket-page .price-guide-img {
-    width: 800px;
+    width: 500px;
     margin: 30px auto;
 }
 
 #drone-jacket-page .price-guide img {
     max-width: 100%;
     max-height: 100%;
+
+    border: 1px solid gray;
 }
 
 #drone-jacket-page .price-guide p {

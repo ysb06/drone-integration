@@ -51,7 +51,7 @@ class DroneJacket extends Component<RouteComponentProps> {
                                         <div className="button-container"><ButtonA text="구매하기" /></div>
                                     </div>
                                     <div className="headline-image">
-                                        <img src="image/page-jacket-7.jpg" alt="Red Drone Jacket" />
+                                        <img src="image/page-jacket-22.png" alt="Red Drone Jacket" />
                                     </div>
                                 </div>
                             </article>
@@ -120,12 +120,12 @@ class DroneJacket extends Component<RouteComponentProps> {
                         {/* 와디즈 복사 */}
                         <div className="details">
                             <h2>제품 이야기</h2>
+
                             <div className="details-paragraph">
                                 {/* 대상(소비자)가 가진 문제점 */}
                                 <h3>당신의 드론에게 부족한 것!</h3>
                                 <div className="details-image">
                                     <img src="image/page-jacket-6.jpg" alt="Upgrade Jackets?" /><br />
-                                    매번 똑같은 드론에는 결국 질릴 수 밖에 없습니다.
                                 </div>
                                 <p>
                                     처음 드론을 날려보면 당신이 조정하는대로 움직이고 촬영도 하고 한동안 재미있지만 똑같은 드론에 곧 흥미가 점점 떨어질 수 밖에 없습니다.
@@ -139,12 +139,12 @@ class DroneJacket extends Component<RouteComponentProps> {
                                 <h3>DJI 드론 오너에게 꼭 필요한 필수 액세사리</h3>
                                 <div className="details-image">
                                     <img src="image/page-jacket-3.jpg" alt="Upgrade Jackets?" /><br />
-                                당신의 드론 이렇게 달라질 수 있습니다
+                                    당신의 드론 이렇게 달라질 수 있습니다
                                 </div>
                                 <p>
                                     저희 HDI Lab.에서는 저렴한 가격에 당신의 드론을 변화시켜 줄 수 있는 스킨 커버를 판매하고 있습니다.
                                     <span style={{ fontWeight: "bold" }}> DJI Phantom 4</span>와 <span style={{ fontWeight: "bold" }}>Mavic 2</span> 두 가지 모델에 장착 가능한 커버를 각각 선택해서 구입 할 수 있습니다.
-                                    이 스킨 커버의 특징은 다음과 같습니다.
+                                    이 스킨 커버의 기능적 특징은 크게 다음과 같습니다.
                                 </p>
                                 <ul>
                                         <li>드론 본체 위에 씌울 수 있는 커버 스킨</li>
@@ -163,12 +163,12 @@ class DroneJacket extends Component<RouteComponentProps> {
                                     이 Drone Jacket의 가장 큰 장점은 바로 ¼" 표준나사로 이를 통해 측량용 센서, 360도 카메라나 조명기구, 소형 프로젝터
                                     등 다양한 액세서리를 결합시킬 수 있다는 점입니다.
                                     예를 들어, 위와 같이 Phantom 4 드론에 360 카메라를 장착하여 멋진 파노라마 영상을 촬영하거나,
-                                    아래와 같이 드론 위에 스포트라이트를 장착하여 더 특정 부분을 더 밝게 촬영할 수 있습니다.
+                                    아래와 같이 드론 위에 스포트라이트를 장착하여 특정 부분을 더 밝게 촬영할 수 있습니다.
                                 </p>
                                 <div className="details-image">
+                                    <img src="image/page-jacket-12.png" alt="Upgrade Jackets?" /><br />
                                     <iframe title="drone-jacket" width="850" height="478" src="https://www.youtube.com/embed/-RS3X2CXXZs"
                                         frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen /><br />
-                                    <img src="image/page-jacket-12.png" alt="Upgrade Jackets?" /><br />
                                     드론에 스포트라이트를 장착
                                 </div>
                             </div>
@@ -209,7 +209,8 @@ class DroneJacket extends Component<RouteComponentProps> {
                                 {/* 커스터마이징 */}
                                 <h3>당신의 개성을 드론에 원하는대로 반영할 수 있습니다</h3>
                                 <div className="details-image">
-                                    <img src="image/page-jacket-19.jpg" width={850} alt="Upgrade Jackets?" /><br />
+                                    <img src="image/page-jacket-23.jpg" alt="Upgrade Jackets?" /><br />
+                                    <img src="image/page-jacket-19.jpg" alt="Upgrade Jackets?" /><br />
                                     Jacket위에 자유로운 커스터마이징
                                 </div>
                                 <p>
@@ -281,9 +282,14 @@ class DroneJacket extends Component<RouteComponentProps> {
                             <div className="price-guide-container">
                                 <div className="price-guide-content">
                                     <div className="price-guide-img">
-                                        <img src="image/page-jacket-7.jpg" alt="Jacket" />
+                                        <img src="image/page-jacket-21.png" alt="Jacket" />
                                     </div>
                                     <p>DJK Ph4 (Phantom 4용) <span style={{ fontWeight: "bold" }}>33,000</span>원</p>
+                                </div>
+                                <div className="price-guide-content">
+                                    <div className="price-guide-img">
+                                        <img src="image/page-jacket-20.jpg" alt="Jacket" />
+                                    </div>
                                     <p>DJK Mv2 (Mavic 2용) <span style={{ fontWeight: "bold" }}>22,000</span>원</p>
                                 </div>
                             </div>
