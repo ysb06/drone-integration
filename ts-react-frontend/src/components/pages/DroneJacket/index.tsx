@@ -231,6 +231,7 @@ class DroneJacket extends Component<RouteComponentProps> {
                                     <tr>
                                         <td className="title-column-ph4">제품 소재</td>
                                         <td className="content-column">폴리 카보네이트</td>
+                                        <td className="image-column" rowSpan={4}><img src="image/page-jacket-21.png" alt="Jacket" /></td>
                                     </tr>
                                     <tr>
                                         <td className="title-column-ph4">규격</td>
@@ -252,6 +253,7 @@ class DroneJacket extends Component<RouteComponentProps> {
                                     <tr>
                                         <td className="title-column-mv2">제품 소재</td>
                                         <td className="content-column">폴리 카보네이트</td>
+                                        <td className="image-column" rowSpan={4}><img src="image/page-jacket-20.jpg" alt="Jacket" /></td>
                                     </tr>
                                     <tr>
                                         <td className="title-column-mv2">규격</td>
@@ -279,6 +281,7 @@ class DroneJacket extends Component<RouteComponentProps> {
                         <div className="price-guide">
                             <h2>Drone Jacket</h2>
                             <h3>Upgrade your drone</h3>
+                            {/*
                             <div className="price-guide-container">
                                 <div className="price-guide-content">
                                     <div className="price-guide-img">
@@ -293,6 +296,7 @@ class DroneJacket extends Component<RouteComponentProps> {
                                     <p>DJK Mv2 (Mavic 2용) <span style={{ fontWeight: "bold" }}>22,000</span>원</p>
                                 </div>
                             </div>
+                            */}
                             <div className="price-guide-button">
                                 <ButtonA text="구매하기" />
                             </div>

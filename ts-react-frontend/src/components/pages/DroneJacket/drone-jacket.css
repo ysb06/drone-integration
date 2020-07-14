@@ -155,7 +155,7 @@
 #drone-jacket-page .details {
     max-width: 1000px;
 
-    margin: 150px auto;
+    margin: 100px auto;
 }
 
 #drone-jacket-page .details h3 {
@@ -195,7 +195,7 @@
 }
 
 #drone-jacket-page .details-paragraph {
-    margin: 100px auto 300px auto;
+    margin: 100px auto;
 
     line-height: 250%;
 }
@@ -258,6 +258,7 @@
 
 #drone-jacket-page .spec h3 {
     font-size: 1.5rem;
+    margin-top: 50px;
 }
 
 #drone-jacket-page .spec table {
@@ -275,7 +276,8 @@
 }
 
 #drone-jacket-page .spec td {
-    width: 350px;
+    width: 270px;
+    /*480*/
 }
 
 #drone-jacket-page .spec .title-column-ph4 {
@@ -289,8 +291,21 @@
 }
 
 #drone-jacket-page .spec .content-column {
-    width: 870px;
+    width: 470px;
     background-color: white;
+}
+
+#drone-jacket-page .spec .image-column {
+    width: 360px;
+    height: 350px;
+    background-color: white;
+    padding: 10px 0 0 10px;
+}
+
+#drone-jacket-page .spec .image-column img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
 }
 
 #drone-jacket-page .spec-warning {
