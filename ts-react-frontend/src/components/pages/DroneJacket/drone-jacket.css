@@ -1,4 +1,9 @@
-#drone-jacket-page .headline h1 {
+#drone-jacket-page {
+    position: absolute;
+    top: 10vh;
+}
+
+#drone-jacket-page h1 {
     font-family: Arial;
     font-size: 4rem;
 }
@@ -156,10 +161,12 @@
     max-width: 1000px;
 
     margin: 100px auto;
+    word-break: keep-all;
 }
 
 #drone-jacket-page .details h3 {
     text-align: center;
+    line-height: 100%;
 }
 
 #drone-jacket-page .details h3::before {
@@ -195,7 +202,7 @@
 }
 
 #drone-jacket-page .details-paragraph {
-    margin: 100px auto;
+    margin: 75px auto 225px auto;
 
     line-height: 250%;
 }
@@ -267,6 +274,7 @@
     margin: 0 auto;
 
     font-size: 1.5rem;
+    text-align: center;
 }
 
 #drone-jacket-page .spec td {
@@ -299,7 +307,7 @@
     width: 360px;
     height: 350px;
     background-color: white;
-    padding: 10px 0 0 10px;
+    padding: 5px 0 0 3px;
 }
 
 #drone-jacket-page .spec .image-column img {

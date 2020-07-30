@@ -19,19 +19,19 @@ class DroneJacket extends Component<RouteComponentProps> {
     detail_4Cstm: HTMLDivElement | null = null;
 
     onClickFirstSummary(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
-        this.detail_1Func?.scrollIntoView({behavior: 'smooth'});
+        this.detail_1Func?.scrollIntoView({ behavior: 'smooth' });
     }
 
     onClickSecondSummary(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
-        this.detail_2Colr?.scrollIntoView({behavior: 'smooth'});
+        this.detail_2Colr?.scrollIntoView({ behavior: 'smooth' });
     }
 
     onClickThirdSummary(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
-        this.detail_3Figr?.scrollIntoView({behavior: 'smooth'});
+        this.detail_3Figr?.scrollIntoView({ behavior: 'smooth' });
     }
 
     onClickFourthSummary(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
-        this.detail_4Cstm?.scrollIntoView({behavior: 'smooth'});
+        this.detail_4Cstm?.scrollIntoView({ behavior: 'smooth' });
     }
 
     render() {
@@ -108,11 +108,11 @@ class DroneJacket extends Component<RouteComponentProps> {
                         <div className="recommendation">
                             <h2>이런 분들께 꼭 추천드립니다!</h2>
                             <ul>
-                                    <li>나만의 드론을 멋지게 장식해서 개성있게 날리고 싶었던 분</li>
-                                    <li>드론에 나의 identity/personality를 표시하고 싶었던 분</li>
-                                    <li>드론에 회사나 기업의 로고를 표시하고 싶었던 분</li>
-                                    <li>드론에 액션캠이나 조명 같은 부가장치를 붙여서 기능을 향상시키고 싶었던 분</li>
-                                    <li>DJI 의 Phantom 4/Mavic 2 드론을 upgrade 된 기능으로 활용하고 싶었던 분</li>
+                                <li>나만의 드론을 멋지게 장식해서 개성있게 날리고 싶었던 분</li>
+                                <li>드론에 나의 identity/personality를 표시하고 싶었던 분</li>
+                                <li>드론에 회사나 기업의 로고를 표시하고 싶었던 분</li>
+                                <li>드론에 액션캠이나 조명 같은 부가장치를 붙여서 기능을 향상시키고 싶었던 분</li>
+                                <li>DJI 의 Phantom 4/Mavic 2 드론을 upgrade 된 기능으로 활용하고 싶었던 분</li>
                             </ul>
                         </div>
                     </section>
@@ -147,8 +147,8 @@ class DroneJacket extends Component<RouteComponentProps> {
                                     이 스킨 커버의 기능적 특징은 크게 다음과 같습니다.
                                 </p>
                                 <ul>
-                                        <li>드론 본체 위에 씌울 수 있는 커버 스킨</li>
-                                        <li>¼" 표준나사를 사용하여 드론 상단에 액세서리 부착</li>
+                                    <li>드론 본체 위에 씌울 수 있는 커버 스킨</li>
+                                    <li>¼" 표준나사를 사용하여 드론 상단에 액세서리 부착</li>
                                 </ul>
                             </div>
 
@@ -182,26 +182,38 @@ class DroneJacket extends Component<RouteComponentProps> {
                                 </div>
                                 <p>
                                     다양한 색상의 Drone Jacket이 준비되어 있어 원하는대로 드론의 색상을 변경할 수 있습니다.<br />
-                                    (자세한 색상은 아래 상세정보를 참조해 주세요.)<br />
+                                    DJI Phantom 4 용 5종, DJI  Mavic 2 용 2종의 색상 중 당신이 원하는 색을 선택하여 드론을 새롭게 변화시키세요<br />
                                 </p>
+                                <div className="details-image">
+                                    <img src="image/page-jacket-24.png" alt="Upgrade Jackets?" /><br />
+                                    Phantom 4 용 Drone Jacket 색상 종류<br />
+                                </div>
+                                <div className="details-image">
+                                    <img src="image/page-jacket-25.png" alt="Upgrade Jackets?" /><br />
+                                    Mavic 2 용 Drone Jacket 색상 종류<br />
+                                </div>
                             </div>
 
                             <div className="details-paragraph" ref={e => this.detail_3Figr = e}>
                                 {/* 피규어 장착 */}
-                                <h3>당신의 피규어와 함께 하늘을 날아보세요</h3>
+                                <h3>주변 일상용품을 드론 피규어로...</h3>
                                 <div className="details-image">
                                     <img src="image/page-jacket-16.jpg" width={850} alt="Upgrade Jackets?" /><br />
                                     Figure on the drone<br />
                                 </div>
-                                <p>
-                                    피규어 스탠드 어댑터를 사용하면 작은 피규어들을 드론에 태울 수 있습니다.
-                                    귀여운 피규어가 하늘을 나는 모습을 보면서 같이 하늘을 나는 듯한 즐거움을 만끽하세요.
-                                </p>
                                 <div className="details-image">
                                     <iframe title="drone-jacket" width="850" height="478" src="https://www.youtube.com/embed/lr7qq3vT05U"
                                         frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen /><br />
+                                </div>
+                                <p>
+                                    피규어 스탠드 어댑터를 사용하면 작은 피규어들을 드론에 태울 수 있습니다.
+                                    귀여운 피규어가 하늘을 나는 모습을 보면서 같이 하늘을 나는 듯한 즐거움을 만끽하세요. <br />
+                                    <br />
+                                    피규어 어댑터는 대형과 소형 두 종류가 있으며 ¼" 표준나사를 통해 드론에 고정할 수 있습니다.
+                                </p>
+                                <div className="details-image">
                                     <img src="image/page-jacket-18.png" width={850} alt="Upgrade Jackets?" /><br />
-                                    피규어 어댑터 종류<br />
+                                    피규어 어댑터<br />
                                 </div>
                             </div>
 
@@ -215,7 +227,7 @@ class DroneJacket extends Component<RouteComponentProps> {
                                 </div>
                                 <p>
                                     Drone Jacket을 사용하면 드론 본체를 더럽히지 않고 자유롭게 스티커를 붙이거나 글자를 새길 수 있습니다.
-                                    Drone Jacket의 가장 큰 특징은 탈부착이 쉽고 드론에 손상을 주지 않는다는 점이 특징입니다. 
+                                    Drone Jacket의 가장 큰 특징은 탈부착이 쉽고 드론에 손상을 주지 않는다는 점이 특징입니다.
                                     때문에, 서로 다른 Drone Jacket에 원하는 대로 커스터마이징한 후 마음에 드는 대로 교체할 수 있습니다.
                                 </p>
                             </div>
