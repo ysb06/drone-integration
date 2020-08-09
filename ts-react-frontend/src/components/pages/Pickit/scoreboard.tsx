@@ -3,6 +3,8 @@ import './scoreboard.css';
 import { RouteComponentProps } from 'react-router-dom';
 
 const Final_Round = 2;
+const Round1_Time = 180000;
+const Round2_Time = 120000;
 
 interface IScoreboardState {
     round: number,
@@ -46,11 +48,15 @@ class Scoreboard extends Component<RouteComponentProps, IScoreboardState> {
         let currentTurn: GameTurn = this.state.turn;
         if (currentTurn === GameTurn.End) {
             currentTurn = GameTurn.P1;
+        } else {
+            alert('게임이 이미 실행 중입니다. 정지하시려면 리셋을 누르세요.');
+            // 현재 부분이 실재 게임 실행 중인지 여부는 검토 필요
+            return;
         }
 
         this.setState({
             turn: currentTurn,
-            targetTime: new Date(Date.now() + (this.state.round === 1 ? 10000 : 5000))
+            targetTime: new Date(Date.now() + (this.state.round === 1 ? Round1_Time : Round2_Time))
         });
         setTimeout(this.refreshBoard, 500);
         console.log('Round ' + this.state.round + ', Player ' + (currentTurn + 1) + ' turn');
@@ -74,6 +80,9 @@ class Scoreboard extends Component<RouteComponentProps, IScoreboardState> {
                 case GameTurn.P2:
                     this.setState({p2Time: new Date(remainedTime)});
                     break;
+                case GameTurn.End:
+                    alert('게임을 초기화했습니다.');
+                    return;
                 default:
                     alert('Unknown Turn error');
                     return;
@@ -91,7 +100,9 @@ class Scoreboard extends Component<RouteComponentProps, IScoreboardState> {
     resetRound(event: React.MouseEvent<HTMLInputElement, MouseEvent>) {
         this.setState({
             round: 1,
-            turn: GameTurn.End
+            turn: GameTurn.End,
+            p1Time: new Date(Round1_Time),
+            p2Time: new Date(Round1_Time),
         })
     }
 
