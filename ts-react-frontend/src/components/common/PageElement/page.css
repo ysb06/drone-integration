@@ -16,7 +16,7 @@
     font-size: 2rem;
 }
 
-.page-element p {
+.page-element p, .page-element li {
     font-size: 1.5rem;
 }
 
@@ -41,12 +41,7 @@
     display: flex;
 }
 
-.page-element .summary-content img {
-    max-width: 40%;
-    margin: 0 5%;
-}
-
-.page-element .summary-content video {
+.page-element .summary-content img, .page-element .summary-content video {
     max-width: 40%;
     margin: 0 5%;
 }
@@ -84,14 +79,14 @@
     background-color: lightgray;
 }
 
-.feature-element {
+.page-element .feature-element {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
 }
 
-.feature-element .text {
+.page-element .feature-element .text {
     width: 50%;
     height: 100%;
     
@@ -100,17 +95,79 @@
     justify-content: center;
 }
 
-.feature-element .media {
+.page-element .feature-element .media {
     width: 40%;
     height: 100%;
 }
 
-.feature-element img{
+.page-element .feature-element img, .feature-element video{
     max-width: 90%;
     margin: 0 5%;
 }
 
-.feature-element video{
-    max-width: 90%;
-    margin: 0 5%;
+/* List */
+
+.page-element .list-content {
+    display: flex;
+}
+
+.page-element .list-content ul {
+    width: 50%;
+
+    list-style: none;
+    margin: 25px 0;
+    padding: 0px;
+}
+
+.page-element li {
+    width: 100%;
+    margin-bottom: 25px;
+    border-top: 3px solid #1F242F;
+    display: flex;
+    align-content: center;
+}
+
+.page-element li p{
+    margin: auto 20px;
+}
+
+.page-element li::before {
+    content: "\2022";
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-color: #1F242F;
+}
+
+.page-element .list-content img, .page-element .list-content video {
+    width: 30%;
+    margin: 0 10%;
+}
+
+/* Tab Page */
+.tab-page {
+    display: flex;
+}
+
+.content {
+    width: 100%;
+}
+
+.tab-switch-button {
+    width: 67px;
+    height: 135px;
+
+    background-color: darkgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 5px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.tab-switch-button:hover {
+    background-color: gray;
 }
