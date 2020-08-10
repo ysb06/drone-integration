@@ -1,0 +1,19 @@
+.button-type-b {
+    position: absolute;
+    width: 250px;
+    height: 65px;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    text-decoration: none;
+
+    background-color: #900020;
+    cursor: pointer;
+}

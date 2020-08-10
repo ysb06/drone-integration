@@ -4,6 +4,9 @@
 }
 
 main {
+    position: relative;
+    top: 10vh;
+
     width: 100%;
 }
 

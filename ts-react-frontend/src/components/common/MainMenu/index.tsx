@@ -13,7 +13,7 @@ class MainMenu extends Component {
                         <ul>
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/drone-jacket">Drone Jacket</Link></li>
-                            <li>Pick it!</li>
+                            <li><Link to="/pick-it">Pick it!</Link></li>
                             <li>Dronia Edu</li>
                             <li>Contact Us</li>
                         </ul>

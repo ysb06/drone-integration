@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "HDI Lab.",
+  "name": "HDI Lab. Homepage",
   "icons": [
     {
       "src": "favicon.ico",
@@ -10,12 +10,7 @@
     {
       "src": "image/Logo.png",
       "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "image/Logo.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "277x96"
     }
   ],
   "start_url": ".",

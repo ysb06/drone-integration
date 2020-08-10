@@ -1,0 +1,116 @@
+/* Common Page */
+.page-element {
+    word-break: keep-all;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.page-element h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: 'Helvetica, Arial, NanumSquare, Gulim';
+}
+
+.page-element h2 {
+    font-size: 2rem;
+}
+
+.page-element p {
+    font-size: 1.5rem;
+}
+
+.page-element section {
+    margin-top: 100px;
+}
+
+
+/* Title */
+.page-element .title h1 {
+    margin-bottom: 0;
+}
+
+.page-element .title p {
+    margin-top: 0;
+    font-family: 'Helvetica, Arial, NanumSquare, Gulim';
+}
+
+/* Summary */
+.page-element .summary-content {
+    position: relative;
+    display: flex;
+}
+
+.page-element .summary-content img {
+    max-width: 40%;
+    margin: 0 5%;
+}
+
+.page-element .summary-content video {
+    max-width: 40%;
+    margin: 0 5%;
+}
+
+/* Features */
+/* 색깔만 바꾸도록 코드 수정*/
+.feature-background-0 {
+    width: 100%;
+    height: 580px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: whitesmoke;
+}
+
+.feature-background-1 {
+    width: 100%;
+    height: 580px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #1F242F;
+    color: whitesmoke;
+}
+
+.feature-background-2 {
+    width: 100%;
+    height: 580px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: lightgray;
+}
+
+.feature-element {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.feature-element .text {
+    width: 50%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feature-element .media {
+    width: 40%;
+    height: 100%;
+}
+
+.feature-element img{
+    max-width: 90%;
+    margin: 0 5%;
+}
+
+.feature-element video{
+    max-width: 90%;
+    margin: 0 5%;
+}
