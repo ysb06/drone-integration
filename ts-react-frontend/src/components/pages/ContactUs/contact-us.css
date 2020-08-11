@@ -1,6 +1,7 @@
-main {
-    height: 60vh;
-    padding-top: 100px;
+.contact-app main {
+    position: relative;
+    top: 20vh;
+    height: 80vh;
 }
 
 .contact-container {

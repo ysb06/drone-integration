@@ -10,9 +10,11 @@ class DroniaEdu extends Component {
                 <header>
                     <MainMenu />
                 </header>
-                <main style={{height: "55vh"}}>
+                <main style={{ height: "60vh" }}>
                     <Title mainTitleText="DroniaEdu" subTitleText="Learn & play with Drones" />
-                    <Summary title="드론의 가능성을 배울 수 있습니다." content="준비중" />
+                    <section>
+                        <Summary title="드론의 가능성을 배울 수 있습니다." content="준비중" />
+                    </section>
                 </main>
                 <footer>
                     <img src="image/prototype/footer.png" style={{ maxWidth: '100%', marginTop: '200px' }} alt="Main Page" />
