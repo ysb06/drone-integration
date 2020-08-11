@@ -1,4 +1,58 @@
 /* .main-container는 추후 통합 페이지로 이동 */
 section {
-    margin-top: 200px;
+    margin-top: 150px;
+}
+
+/* Solo Tab */
+.solo-tab .element-group {
+    width: 80%;
+    height: 80%;
+    margin: 40px auto;
+    padding: 0;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px 60px;
+    counter-reset: elem;
+}
+.solo-tab .element {
+    width: 100%;
+}
+
+.solo-tab .element img {
+    width: 100%;
+}
+
+.solo-tab .element p {
+    width: fit-content;
+    margin: auto;
+
+    font-size: 1.15rem;
+}
+
+.solo-tab .element p::before {
+    display: inline-block;
+    text-align: center;
+    width: 1rem;
+    height: 1rem;
+    margin: 10px;
+    counter-increment: elem;
+    content: counter(elem);
+    border-radius: 1rem;
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Double Tab */
+
+.duel-tab {
+    height: 1000px;
+}
+
+/* Deul Team Tab */
+
+.dtd-tab {
+    height: 1000px;
 }

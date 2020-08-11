@@ -16,7 +16,7 @@ class Summary extends Component<ISummaryProps> {
         if (this.props.pictureSrc) {
             return (<img src={this.props.pictureSrc} alt="Summary" />)
         } else if (this.props.videoSrc) {
-            return (<video src={this.props.videoSrc} autoPlay={this.props.videoAutoPlay} controls loop />)
+            return (<video src={this.props.videoSrc} autoPlay={this.props.videoAutoPlay} loop />)
         } else {
             return (<Fragment></Fragment>);
         }
@@ -25,14 +25,18 @@ class Summary extends Component<ISummaryProps> {
     render() {
         return (
             <div className="page-element">
-                <section className="summary">
+                <div className="summary">
                     <div className="summary-title"><h2>{this.props.title}</h2></div>
                     <div className="summary-content">
                         <p>{this.props.content}</p>
                         {this.renderMedia()}
-                        <ButtonTypeB text="문의하기" />
+                        {
+                            this.props.buttonText ?
+                                (<ButtonTypeB text={this.props.buttonText} />) :
+                                (<Fragment />)
+                        }
                     </div>
-                </section>
+                </div>
             </div>
         );
     }

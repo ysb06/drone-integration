@@ -1,0 +1,8 @@
+main {
+    height: 60vh;
+    padding-top: 100px;
+}
+
+.contact-container {
+    display: flex;
+}

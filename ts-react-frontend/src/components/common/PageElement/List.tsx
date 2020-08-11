@@ -21,19 +21,17 @@ class List extends Component<IListProps> {
 
     render() {
         return (
-            <section>
-                <div className="page-element">
-                    <h2>{this.props.title}</h2>
-                    <div className="list-content">
-                        <ul>
-                            {this.props.textList.map<JSX.Element>((text: string, index: number) =>
-                                <li key={index}><p>{text}</p></li>
-                            )}
-                        </ul>
-                        {this.renderMedia()}
-                    </div>
+            <div className="page-element">
+                <h2>{this.props.title}</h2>
+                <div className="list-content">
+                    <ul>
+                        {this.props.textList.map<JSX.Element>((text: string, index: number) =>
+                            <li key={index}><p>{text}</p></li>
+                        )}
+                    </ul>
+                    {this.renderMedia()}
                 </div>
-            </section>
+            </div>
         );
     }
 }

@@ -21,7 +21,7 @@ class FeatureElement extends Component<IFeatureElementProps> {
         if (this.props.pictureSrc) {
             return (<img src={this.props.pictureSrc} alt="Feature" />)
         } else if (this.props.videoSrc) {
-            return (<video src={this.props.videoSrc} autoPlay={this.props.videoAutoPlay} controls loop />)
+            return (<video src={this.props.videoSrc} autoPlay={this.props.videoAutoPlay} loop />)
         } else {
             return (<Fragment></Fragment>);
         }
