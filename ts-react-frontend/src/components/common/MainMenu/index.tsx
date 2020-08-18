@@ -16,7 +16,7 @@ class MainMenu extends Component {
                     <div className="menu-list">
                         <ul>
                             <li><Link to="/drone-jacket" onClick={this.onItemClick}>Drone Jacket</Link></li>
-                            <li><Link to="/pick-it" onClick={this.onItemClick}>Pick it!</Link></li>
+                            <li><Link to="/pick-it" onClick={this.onItemClick}>D, Pick it!</Link></li>
                             <li><Link to="/dronia-edu" onClick={this.onItemClick}>Dronia Edu</Link></li>
                             <li><Link to="/contact" onClick={this.onItemClick}>Contact Us</Link></li>
                         </ul>

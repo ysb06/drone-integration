@@ -47,19 +47,19 @@ class Home extends Component<HomeProps, HomeState> {
                         <div className="representative-items-container">
                             <Link to="/drone-jacket" onClick={this.onItemClick}>
                                 <div className="representative-item">
-                                    <img src="image/page-jacket-2.jpg" alt="Drone Jacket" /><br />
+                                    <img src="image/optimized/main/page-main-2.png" alt="Drone Jacket" /><br />
                                     <p>Drone Jacket</p>
                                 </div>
                             </Link>
                             <Link to="/pick-it" onClick={this.onItemClick}>
                             <div className="representative-item">
-                                <img src="image/page-main-3.gif" alt="Pick it" /><br />
+                                <img src="image/raw/main/page-main-3.gif" alt="Pick it" /><br />
                                 <p>Pick it!</p>
                             </div>
                             </Link>
                             <Link to="/dronia-edu" onClick={this.onItemClick}>
                             <div className="representative-item" style={{backgroundColor: "white"}}>
-                                <img src="image/page-main-4.png" alt="Dronia Edu" /><br />
+                                <img src="image/optimized/main/page-main-4.png" alt="Dronia Edu" /><br />
                                 <p>Dronia Edu</p>
                             </div>
                             </Link>

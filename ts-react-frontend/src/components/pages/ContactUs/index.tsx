@@ -17,7 +17,7 @@ class ContactUs extends Component {
                                 <img src="image/Logo.png" alt="Logo"/>
                                 <div className="summary-title"><h2>Human Drone Interaction</h2></div>
                                 <div className="summary-content">
-                                    <p>우리는 드론을 통해 즐길 수 있는 다양한 서비스를 개발하고 제품을 제작하는 스타트업 기업입니다.</p>
+                                    <p>HDI Lab은 드론을 통해 즐길 수 있는 다양한 경험을 개발하고 드론용 엑서사리을 제작하는 스타트업 기업입니다.</p>
                                 </div>
                             </div>
                             <div>

@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 
 interface IListProps {
-    title: string,
+    title?: string,
     textList: string[],
     pictureSrc?: string,
     videoSrc?: string,
@@ -22,7 +22,7 @@ class List extends Component<IListProps> {
     render() {
         return (
             <div className="page-element">
-                <h2>{this.props.title}</h2>
+                {this.props.title ? <h2>{this.props.title}</h2> : <Fragment></Fragment>}
                 <div className="list-content">
                     <ul>
                         {this.props.textList.map<JSX.Element>((text: string, index: number) =>

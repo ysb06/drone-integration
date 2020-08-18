@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './button-style.css';
-import { Link } from 'react-router-dom';
 
 interface IButtonTypeBProps {
     text: string,
@@ -32,9 +31,9 @@ class ButtonTypeB extends Component<IButtonTypeBProps> {
     render() {
         if (this.props.linkTo) {
             return (
-                <Link to={this.props.linkTo}>
+                <a href={this.props.linkTo}>
                     {this.buttonView}
-                </Link>
+                </a>
             );
         } else {
             return this.buttonView;

@@ -29,11 +29,20 @@
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="app"></div>
 
-  <div id="not-supported-message"></div>
+  <div id="browser-not-supported-message"></div>
   <script type="text/javascript">
     let browse = navigator.userAgent;
-    if(browse.indexOf('Trident') != -1) {
-      document.getElementById('not-supported-message').innerHTML = "Please use another web browser except for IE. (인터넷 익스플로러가 아닌 다른 브라우저를 사용해 주세요.)";
+    if (browse.indexOf('Trident') != -1) {
+      document.getElementById('browser-not-supported-message').innerHTML = "Please use another web browser except for IE. (인터넷 익스플로러가 아닌 다른 브라우저를 사용해 주세요.)";
+    }
+  </script>
+  <!-- 네이버 애널리틱스 -->>
+  <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+  <script type="text/javascript">
+    if (!wcs_add) var wcs_add = {};
+    wcs_add["wa"] = "4763d3d020d824";
+    if (window.wcs) {
+      wcs_do();
     }
   </script>
 </body>

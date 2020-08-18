@@ -22,7 +22,7 @@ class TabSolo extends Component {
                     </div>
                     <div className="element">
                         <img src="image/page-pickit-3-4.png" alt="How to pick it 4" />
-                        <p>동료가 들고 있는 뜰채로 인형을 받습니다</p>
+                        <p>친구가 들고 있는 뜰채로 인형을 받습니다</p>
                     </div>
                 </div>
             </div>

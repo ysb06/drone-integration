@@ -8,7 +8,9 @@ interface ISummaryProps {
     pictureSrc?: string,
     videoSrc?: string,
     videoAutoPlay?: boolean,
-    buttonText?: string
+    buttonText?: string,
+    linkTo?: string,
+    onClick?: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void,
 }
 
 class Summary extends Component<ISummaryProps> {
@@ -32,7 +34,7 @@ class Summary extends Component<ISummaryProps> {
                         {this.renderMedia()}
                         {
                             this.props.buttonText ?
-                                (<ButtonTypeB text={this.props.buttonText} />) :
+                                (<ButtonTypeB text={this.props.buttonText} linkTo={this.props.linkTo} onClick={this.props.onClick}/>) :
                                 (<Fragment />)
                         }
                     </div>

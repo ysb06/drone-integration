@@ -5,7 +5,7 @@ import Title from '../../common/PageElement/Title';
 
 import './pick-it.css';
 import Summary from '../../common/PageElement/Summary';
-import FeatureElement, { FeatureStyle } from '../../common/PageElement/FeatureElement';
+import FeatureElement, { FeatureStyleColor, FeatureStyleForm } from '../../common/PageElement/FeatureElement';
 import List from '../../common/PageElement/List';
 import TabPage from '../../common/PageElement/TabPage';
 import TabSolo from './TabSolo';
@@ -38,20 +38,28 @@ class PickIt extends Component {
                             title="드론 조종의 재미"
                             content="드론이 낯선 사람도, 직접 체험하면서 즐겨보세요!"
                             videoSrc="video/page-pickit-02.mp4" videoAutoPlay={true}
-                            style={FeatureStyle.White}
+                            style={{
+                                color: FeatureStyleColor.White,
+                                form: FeatureStyleForm.normal
+                            }}
                         />
                         <FeatureElement
                             title="누구나 즐길 수 있는 게임"
-                            content="연령 또는 장애나 신체적 제한 없이, 남녀노소 누구나 쉽게 즐길 수 있습니다. 또한 실내외 구분없이 어디서든 즐길 수 있습니다."
+                            content="연령 또는 장애나 신체적 제한 없이, 남녀노소 누구나 쉽게 즐길 수 있습니다. 실내외 구분없이 어디서든 즐길 수 있습니다."
                             videoSrc="video/page-pickit-03.mp4" videoAutoPlay={true}
-                            reversed={true}
-                            style={FeatureStyle.Dark}
+                            style={{
+                                color: FeatureStyleColor.Dark,
+                                form: FeatureStyleForm.reversed
+                            }}
                         />
                         <FeatureElement
                             title="인형뽑기의 묘미"
-                            content="그냥 단순한 인형뽑기로 보이시나요? D, Pick it은 혼자서(Solo), 여러명이 경쟁하면서(Dual) 다양한 즐거움을 선사합니다."
+                            content="그냥 단순한 인형뽑기로 보이시나요? D, Pick it은 혼자서(Solo), 또는 여러명이 경쟁하면서(Duel) 다양한 즐거움을 선사합니다."
                             videoSrc="video/page-pickit-04.mp4" videoAutoPlay={true}
-                            style={FeatureStyle.Gray}
+                            style={{
+                                color: FeatureStyleColor.Gray,
+                                form: FeatureStyleForm.normal
+                            }}
                         />
                     </section>
                     <section>
@@ -69,7 +77,7 @@ class PickIt extends Component {
                     </section>
                     <section>
                         <TabPage
-                            tabPageTitle={["D, Pick it Solo", "D, Pick it Duel", "D, Pick it Deul Team"]}
+                            tabPageTitle={["D, Pick it Solo", "D, Pick it Duel", "D, Pick it Duel Team"]}
                             tabContents={[
                                 <TabSolo />,
                                 <TabDuel />,

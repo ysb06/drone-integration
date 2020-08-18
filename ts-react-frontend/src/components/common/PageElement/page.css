@@ -1,3 +1,5 @@
+/* 변수 */
+
 /* Common Page */
 .page-element {
     word-break: keep-all;
@@ -7,7 +9,7 @@
 }
 
 .page-element h1 {
-    font-size: 4rem;
+    font-size: 3.25rem;
     font-weight: bold;
     font-family: 'Helvetica, Arial, NanumSquare, Gulim';
 }
@@ -50,9 +52,35 @@
     margin: 0 5%;
 }
 
+/* Summary Simple */
+.page-element .summary-simple{
+    margin: 100px auto;
+    text-align: center;
+}
+.page-element .summary-simple-title h2{
+    margin: 0;
+}
+
+.page-element .summary-simple-subtitle h3 {
+    font-size: 1.5rem;
+}
+
+.page-element .summary-simple-button {
+    position: relative;
+    width: fit-content;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.page-element .summary-simple-button a {
+    position: relative;
+    top: 100px;
+    left: -125px;
+}
+
 /* Features */
 /* 색깔만 바꾸도록 코드 수정*/
-.feature-background-0 {
+.feature-background {
     width: 100%;
     height: 580px;
 
@@ -83,6 +111,16 @@
     background-color: lightgray;
 }
 
+.feature-background-3 {
+    width: 100%;
+    height: 580px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #DEE6EA;
+}
+
 .page-element .feature-element {
     display: flex;
     justify-content: space-between;
@@ -111,39 +149,15 @@
 
 /* List */
 
-.page-element .list-content {
+.list-content {
     display: flex;
 }
 
-.page-element .list-content ul {
+.list-content ul {
     width: 50%;
-
-    list-style: none;
-    margin: 25px 0;
-    padding: 0px;
 }
 
-.page-element .list-content li {
-    width: 100%;
-    margin-bottom: 25px;
-    border-top: 3px solid #1F242F;
-    display: flex;
-    align-content: center;
-}
-
-.page-element .list-content li p{
-    margin: auto 20px;
-}
-
-.page-element .list-content li::before {
-    content: "\2022";
-    width: 50px;
-    height: 50px;
-    display: block;
-    background-color: #1F242F;
-}
-
-.page-element .list-content img, .page-element .list-content video {
+.list-content img, .list-content video {
     width: 30%;
     margin: 0 10%;
 }
@@ -267,4 +281,69 @@
     max-width: 100%;
     max-height: 100%;
     margin: auto;
+}
+
+/* Story */
+.story {
+    margin: 0 0 250px 0;
+}
+
+.page-element .story-title {
+    text-align: center;
+    line-height: 100%;
+    /* Line Height와 아래 margin 사이 검토 필요 */
+    margin-top: 200px;
+}
+
+.page-element .story-title h3::before {
+    content: "\201C \A";
+    margin: 0 0 1rem 0;
+    font-size: 5rem;
+    font-family: 'NanumBarunGothic';
+    color: #B3B3B3;
+    
+    display: block;
+}
+
+.page-element .story-title h3::after {
+    content: "\A\A \201D";
+
+    margin-top: 5rem;
+    font-size: 5rem;
+    font-family: 'NanumBarunGothic';
+    color: #B3B3B3;
+    
+    display: block;
+}
+
+.page-element .story-text {
+    margin: 50px;
+}
+
+.page-element .story-text p{
+    font-size: 1.5rem;
+    line-height: 200%;
+}
+
+.page-element .media-title {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.page-element .story-image img {
+    max-width: 850px;
+    margin: 50px auto 25px auto;
+    display: block;
+}
+
+.page-element .story-video video {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.page-element .story-video iframe {
+    display: block;
+    margin: 0 auto;
 }
