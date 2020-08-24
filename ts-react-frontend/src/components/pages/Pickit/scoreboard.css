@@ -10,10 +10,17 @@
     flex-direction: column;
     align-items: center;
 
-    background-color: greenyellow;
+    background-color: gray;
 }
 
-.time-board {
+.score-app-text {
+    margin: 0 auto;
+}
+
+
+/* 상단 점수판 */
+
+.scoreboard {
     width: 100%;
     height: 20%;
 
@@ -23,7 +30,7 @@
     justify-content: space-between;
 }
 
-.time-content {
+.score {
     width: 40%;
 
     font-size: 2.5rem;
@@ -31,6 +38,12 @@
 
     display: flex;
     align-items: center;
+}
+
+.score input[type="text"] {
+    width: 10rem;
+    text-align: center;
+    font-size: 5rem;
 }
 
 .round {
@@ -53,44 +66,36 @@
 
 .round-content {
     margin: auto;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
-.score-board {
+
+/* 메인 시간 표시판 */
+
+.time-board {
     width: 100%;
     height: 80%;
 
     display: flex;
     justify-content: space-between;
 
-    background-color: violet;
+    background-color: lightgoldenrodyellow;
 
-    font-size: 5rem;
+    font-size: 10rem;
+    font-weight: bold;
 }
 
-.score-content {
-    width: 45%;
+.time {
+    width: 50%;
 
     display: flex;
     align-items: center;
+
+    border: 1px solid darkgray;
 }
 
-.score-board input[type="text"] {
-    width: 10rem;
-    text-align: center;
-    font-size: 5rem;
-}
 
-.divider {
-    width: 10%;
-
-    display: flex;
-    align-items: center;
-}
-
-.score-text {
-    margin: 0 auto;
-}
+/* 조작 부분 (리셋, 시작) */
 
 .control-panel {
     position: absolute;
@@ -104,4 +109,12 @@
     margin: 10px;
 
     font-size: 1.5rem;
+}
+
+/* Deprecated */
+.divider {
+    width: 10%;
+
+    display: flex;
+    align-items: center;
 }
