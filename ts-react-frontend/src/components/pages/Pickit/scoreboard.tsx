@@ -3,8 +3,8 @@ import './scoreboard.css';
 import { RouteComponentProps } from 'react-router-dom';
 
 const Final_Round = 2;
-const Round1_Time = 180000;
-const Round2_Time = 120000;
+const Round1_Time = 1800;
+const Round2_Time = 1200;
 
 interface IScoreboardState {
     round: number,
@@ -32,9 +32,9 @@ class Scoreboard extends Component<RouteComponentProps, IScoreboardState> {
     }
     state: IScoreboardState = {
         round: 1,
-        turn: GameTurn.End,
-        p1Time: new Date(180000),
-        p2Time: new Date(180000),
+        turn: GameTurn.P1,
+        p1Time: new Date(Round1_Time),
+        p2Time: new Date(Round1_Time),
         p1Score: 0,
         p2Score: 0
     }
@@ -45,20 +45,12 @@ class Scoreboard extends Component<RouteComponentProps, IScoreboardState> {
             return;
         }
 
-        let currentTurn: GameTurn = this.state.turn;
-        if (currentTurn === GameTurn.End) {
-            currentTurn = GameTurn.P1;
-        } else {
-            alert('게임이 이미 실행 중입니다. 정지하시려면 리셋을 누르세요.');
-            // 현재 부분이 실재 게임 실행 중인지 여부는 검토 필요
-            return;
-        }
-
         this.setState({
-            turn: currentTurn,
             targetTime: new Date(Date.now() + (this.state.round === 1 ? Round1_Time : Round2_Time))
         });
         setTimeout(this.refreshBoard, 500);
+
+        let currentTurn: GameTurn = this.state.turn;
         console.log('Round ' + this.state.round + ', Player ' + (currentTurn + 1) + ' turn');
     }
 
@@ -89,10 +81,17 @@ class Scoreboard extends Component<RouteComponentProps, IScoreboardState> {
             }
             
             setTimeout(this.refreshBoard, 500);
-        } else {
+        } else {    // 게임 각 턴 종료
+            let ding = new Audio('sound/page-pickit-1.mp3');
+            ding.play();
+
+            let temp: GameTurn = this.state.turn + 1
+            if (temp >= GameTurn.End) {
+                temp = GameTurn.P1;
+            }
             this.setState({
-                round: (this.state.turn < 1? this.state.round : this.state.round + 1),
-                turn: this.state.turn + 1
+                round: (this.state.turn < 1 ? this.state.round : this.state.round + 1),
+                turn: temp
             });
         }
     }
@@ -100,7 +99,7 @@ class Scoreboard extends Component<RouteComponentProps, IScoreboardState> {
     resetRound(event: React.MouseEvent<HTMLInputElement, MouseEvent>) {
         this.setState({
             round: 1,
-            turn: GameTurn.End,
+            turn: GameTurn.P1,
             p1Time: new Date(Round1_Time),
             p2Time: new Date(Round1_Time),
         })

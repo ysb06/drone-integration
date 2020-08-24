@@ -33,4 +33,5 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   background-color: #D9D8DD;
+  --main-theme-color: #36347F;
 }
