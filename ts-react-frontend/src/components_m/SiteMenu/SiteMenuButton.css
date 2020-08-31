@@ -1,0 +1,28 @@
+.site-menu .site-menu-button-container {
+    width: 10vh;
+    height: 10vh;
+
+    display: none;
+}
+
+.site-menu-button {
+    width: 6.67vh;
+    height: 6.67vh;
+
+
+    border: 1px solid whitesmoke;
+    border-radius: 1vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+@media (max-width: 1280px) {
+    .site-menu .site-menu-button-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -4,13 +4,14 @@ import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 
 import './index.css';
-import './components/pages/common-pages.css';
 
-import Router from './routes';
+// eslint-disable-next-line
+import Router from './Routes_old';
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router />
+    <App />
   </React.StrictMode>,
   document.getElementById('app')
 );

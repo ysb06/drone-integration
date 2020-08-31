@@ -6,7 +6,7 @@ import PickitScore from './components/pages/Pickit/scoreboard';
 import PickIt from './components/pages/Pickit';
 import DroniaEdu from './components/pages/DroniaEdu';
 import ContactUs from './components/pages/ContactUs';
-import DroneJacket_2 from './components/pages/DroneJacket/index_1';
+import DroneJacket_2 from './components/pages/DroneJacket';
 
 const Router: React.FC = () => {
   return (
