@@ -1,12 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './SiteMenuButton.css';
+import './SideNavigation.css';
 
-const SiteMenu: React.FC = () => {
+interface ISideNavigationProps {
+    onClose: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void
+}
+
+const SideNavigation: React.FC<ISideNavigationProps> = (props) => {
     return (
-        <div className="site-menu">
-            <div className="site-menu-logo"><Link to="/"><img src="image/Logo.png" alt="HDI Logo" /></Link></div>
-            <nav className="site-menu-list">
+        <div className="side-navigation" onClick={props.onClose}>
+            <nav className="side-navigation-container">
                 <ul>
                     <li><Link to="/drone-jacket">Drone Jacket</Link></li>
                     <li><Link to="/pick-it">D, Pick it!</Link></li>
@@ -18,4 +21,4 @@ const SiteMenu: React.FC = () => {
     );
 }
 
-export default SiteMenu;
+export default SideNavigation;

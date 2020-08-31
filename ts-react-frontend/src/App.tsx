@@ -6,8 +6,10 @@ import SiteMenu from './components_m/SiteMenu/SiteMenu';
 const App: React.FC = () => {
   return (
     <BrowserRouter>
+      <div id="page">
+        <Route path="/" exact component={Home} />
+      </div>
       <SiteMenu />
-      <Route path="/" exact component={Home} />
     </BrowserRouter>
   );
 }

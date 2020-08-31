@@ -3,9 +3,15 @@ import './Home.css';
 
 const Home: React.FC = () => {
     return (
-        <div id="page-home">
-            
-        </div>
+        <main id="page-home">
+            <div className="show-window">
+                <div className="catchphrase-container">
+                    <div className="catchphrase-title">Drone Jacket</div>
+                    <div className="catchphrase-subtitle">Upgrade your drone</div>
+                    <div className="video-button"><p>Watch Video ▶</p></div>
+                </div>
+            </div>
+        </main>
     );
 }
 

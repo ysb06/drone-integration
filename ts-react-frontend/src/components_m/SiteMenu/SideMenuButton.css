@@ -1,0 +1,31 @@
+.site-menu .site-menu-button-container {
+    width: 100px;
+    height: 100px;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-menu-button {
+    width: 75px;
+    height: 75px;
+
+    border: 3px solid whitesmoke;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.site-menu-button:active {
+    background-color: gray;
+}
+
+@media (max-width: 1275px) {
+    .site-menu .site-menu-button-container {
+        display: flex;
+    }
+}
