@@ -1,4 +1,7 @@
 /* 320px 미만은 로그인 버튼이 사이드 메뉴로 들어가도록... */
 .site-menu .site-menu-login {
-    width: 100px;
+    width: 10vh;
+    height: 10vh;
+
+    background-color: teal;
 }

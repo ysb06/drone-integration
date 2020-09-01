@@ -1,6 +1,6 @@
 .side-navigation {
   position: fixed;
-  top: 100px;
+  top: 10vh;
   right: 0;
   width: 100%;
   height: 100%;
@@ -20,5 +20,8 @@
   padding-top: 16px;
 
   list-style-type: none;
+}
+
+.side-navigation a {
   line-height: 160%;
 }

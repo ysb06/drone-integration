@@ -1,6 +1,6 @@
 .site-menu .site-menu-button-container {
-    width: 100px;
-    height: 100px;
+    width: 10vh;
+    height: 10vh;
 
     display: none;
     align-items: center;
@@ -8,16 +8,21 @@
 }
 
 .site-menu-button {
-    width: 75px;
-    height: 75px;
+    width: 75%;
+    height: 75%;
 
-    border: 3px solid whitesmoke;
-    border-radius: 10px;
+    border: 2px solid whitesmoke;
+    border-radius: 12.5%;
 
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2rem;
+}
+
+.site-menu-button img {
+    width: 100%;
+    height: 100%;
 }
 
 .site-menu-button:active {
