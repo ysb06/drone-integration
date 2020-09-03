@@ -1,0 +1,48 @@
+.company-info {
+    width: 100%;
+    margin-top: 200px;
+    padding: 64px 0 32px 0;
+
+    background-color: #C7C7C7;
+    display: flex;
+    align-items: center;
+
+    word-break: keep-all;
+}
+
+.company-info .company-info-content {
+    margin: auto 32px;
+}
+
+.company-info .company-name {
+    font-weight: bold;
+}
+
+.company-info .company-info-content hr {
+    width: 200px;
+    margin: 15px 0;
+}
+
+.company-info .company-details {
+    line-height: 160%;
+}
+
+.company-info .language-selector {
+    margin: 32px auto;
+}
+
+.company-info .language-selector form {
+    width: 100%
+}
+
+.company-info .language-selector select {
+    margin: 20px 0;
+    width: 100px;
+}
+
+
+@media (max-width: 1275px) {
+    .company-info {
+        flex-direction: column;
+    }
+}

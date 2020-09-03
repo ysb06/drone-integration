@@ -11,7 +11,7 @@ const SiteMenu: React.FC = () => {
 
     return (
         <div className="site-menu">
-            <div className="site-menu-logo"><Link to="/"><img src="image/Logo.png" alt="HDI Logo" /></Link></div>
+            <div className="site-menu-logo"><Link to="/" onClick={() => { setSideMenu(false) }}><img src="image/Logo.png" alt="HDI Logo" /></Link></div>
             <nav className="site-menu-list">
                 <ul>
                     <li><Link to="/drone-jacket">Drone Jacket</Link></li>
