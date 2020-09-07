@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 
 import './index.css';
+import './components_m/PageElements/PageElements.css'
+import './components_m/PageElements/PageElements-mobile.css'
 
 // eslint-disable-next-line
 import Router from './Routes_old';
