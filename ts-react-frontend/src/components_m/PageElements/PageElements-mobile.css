@@ -26,6 +26,10 @@
     }
 
     /* Summary */
+    #page h2 {
+        text-align: center;
+    }
+
     #page .summary-content {
         max-width: 800px;
 
@@ -91,5 +95,29 @@
 
     #page .spec-table-mobile-image {
         display: block;
+    }
+
+    /* Tab Section */
+    #page .tab-page .navigation {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    #page .tab-page .selector-selected {
+        margin: 0 5px;
+        border-bottom-width: 5px;
+    }
+    
+    #page .tab-page .selector-not-selected {
+        margin: 0 5px;
+        border-bottom-width: 5px;
+    }
+
+    #page .tab-page .content {
+        margin: 25px 5px;
+    }
+
+    #page .tab-page .tab-switch-button {
+        display: none;
     }
 }
