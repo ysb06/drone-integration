@@ -73,6 +73,10 @@ main {
     margin: 0 5%;
 }
 
+#page .summary-content p {
+    width: 100%;
+}
+
 #page .summary-button-container {
     position: absolute;
     bottom: 0;
@@ -96,14 +100,14 @@ main {
     position: relative;
     width: fit-content;
     height: 100px;
-    margin: 0 auto;
+    margin: 5vh auto;
 }
 
 /* Features */
 /* 색깔만 바꾸도록 코드 수정*/
 #page .feature-background {
     width: 100%;
-    height: 580px;
+    padding: 5% 0;
 
     display: flex;
     justify-content: space-evenly;
@@ -112,7 +116,7 @@ main {
     background-color: whitesmoke;
 }
 
-#page .feature-element {
+#page .feature-element, #page .feature-element-rev {
     width: 1180px;
     height: 90%;
 
@@ -121,7 +125,11 @@ main {
     align-items: center;
 }
 
-#page .feature-element .text {
+#page .feature-element-rev {
+    flex-direction: row-reverse;
+}
+
+#page .feature-element-text {
     width: 50%;
     height: 100%;
 
@@ -130,7 +138,7 @@ main {
     justify-content: center;
 }
 
-#page .feature-element .media {
+#page .feature-element-media {
     width: 45%;
     height: 100%;
 
@@ -139,7 +147,7 @@ main {
     align-items: center;
 }
 
-#page .feature-element img, .feature-element video{
+#page .feature-background img, #page .feature-background video {
     max-width: 90%;
     max-height: 100%;
     margin: 0 5%;
@@ -217,26 +225,41 @@ main {
 
 /* QnA */
 
-.page-element .qna {
+#page .qna {
     margin: 75px auto;
 }
 
-.page-element .qna h3::before {
-    content: "\201C \A";
+#page .qna h3 {
+    margin: 0 auto;
+    width: fit-content;
 
-    font-size: 5rem;
-    color: #B3B3B3;
-
-    display: inline-block;
+    text-align: center;
 }
 
-.page-element .qna h3::after {
-    content: "\A\A \201D";
+#page .qna h3::before {
+    content: "\201C \A";
+
+    height: 2.5rem;
+    margin: 1rem 0;
 
     font-size: 5rem;
     color: #B3B3B3;
 
-    display: inline-block;
+    display: block;
+    text-align: center;
+}
+
+#page .qna h3::after {
+    content: "\A\A \201D";
+
+    height: 2.5rem;
+    margin: 1rem 0;
+
+    font-size: 5rem;
+    color: #B3B3B3;
+
+    display: block;
+    text-align: center;
 }
 
 /* Spec Table */
@@ -362,4 +385,9 @@ main {
     height: 360px;
     display: block;
     margin: 0 auto;
+}
+
+#page .empty-box {
+    width: 100%;
+    height: calc(85vh - 700px);
 }

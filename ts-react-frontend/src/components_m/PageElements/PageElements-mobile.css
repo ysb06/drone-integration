@@ -52,12 +52,23 @@
     }
 
     /* Features */
-    #page .feature-background {
-        height: 360px;
+    #page .feature-element {
+        flex-direction: column-reverse;
     }
 
-    #page .feature-element {
+    #page .feature-element-rev {
+        flex-direction: column-reverse;
+    }
+
+    #page .feature-element-text {
         width: 90%;
+        height: fit-content;
+        text-align: center;
+    }
+
+    #page .feature-element-media {
+        width: 90%;
+        height: fit-content;
     }
 
     /* Story */
@@ -119,5 +130,19 @@
 
     #page .tab-page .tab-switch-button {
         display: none;
+    }
+
+    /* QnA */
+    /* List */
+    #page .list img {
+        display: none;
+    }
+
+    #page .list video {
+        display: none;
+    }
+
+    #page .list ul {
+        width: 100%;
     }
 }

@@ -17,7 +17,7 @@ class SummarySimple extends Component<ISummarySimpleProps> {
             <div className="page-element">
                 <div className="summary-simple">
                     <div className="summary-simple-title"><h2>{this.props.title}</h2></div>
-                    <div className="summary-simple-subtitle"><h3>{this.props.subtitle}</h3></div>
+                    <div className="summary-simple-subtitle">{this.props.subtitle}</div>
                     <div className="summary-simple-button">
                         {
                             this.props.buttonText ?

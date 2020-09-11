@@ -69,7 +69,6 @@ const PickIt: React.FC = () => {
                 />
             </section>
             <section>
-                {console.log('TT: ' + window.innerWidth)}
                 <TabPage
                     tabPageTitle={window.innerWidth > 1275 ? ["D, Pick it Solo", "D, Pick it Duel", "D, Pick it Duel Team"] : ["Solo", "Duel", "Duel Team"]}
                     tabContents={[

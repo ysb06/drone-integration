@@ -8,13 +8,11 @@ interface IQnAProps {
 class QnA extends Component<IQnAProps> {
     render() {
         return (
-            <div className="page-element">
-                <div className="qna">
-                    <h3>{this.props.title}</h3>
-                    <p>
-                        {this.props.content}
-                    </p>
-                </div>
+            <div className="qna">
+                <h3>{this.props.title}</h3>
+                <p>
+                    {this.props.content}
+                </p>
             </div>
         );
     }

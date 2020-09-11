@@ -36,31 +36,31 @@ class FeatureElement extends Component<IFeatureElementProps> {
     }
 
     renderContent(): JSX.Element {
-        switch (this.props.style?.form) {
+        switch(this.props.style?.form) {
             case FeatureStyleForm.reversed:
                 return (
-                    <Fragment>
-                        <div className="media">
+                    <div className="feature-element-rev">
+                        <div className="feature-element-media">
                             {this.renderMedia()}
                         </div>
-                        <div className="text">
+                        <div className="feature-element-text">
                             <h3>{this.props.title}</h3>
                             <p>{this.props.content}</p>
                         </div>
-                    </Fragment>
+                    </div>
                 );
             case FeatureStyleForm.normal:
             default:
                 return (
-                    <Fragment>
-                        <div className="text">
+                    <div className="feature-element">
+                        <div className="feature-element-media">
+                            {this.renderMedia()}
+                        </div>
+                        <div className="feature-element-text">
                             <h3>{this.props.title}</h3>
                             <p>{this.props.content}</p>
                         </div>
-                        <div className="media">
-                            {this.renderMedia()}
-                        </div>
-                    </Fragment>
+                    </div>
                 );
         }
     }
@@ -72,13 +72,11 @@ class FeatureElement extends Component<IFeatureElementProps> {
                     backgroundColor: this.props.style?.color?.toString(),
                     color:
                         this.props.style?.color === FeatureStyleColor.Dark ||
-                        this.props.style?.color === FeatureStyleColor.Black
-                        ? "whitesmoke" : undefined
+                            this.props.style?.color === FeatureStyleColor.Black
+                            ? "whitesmoke" : undefined
                     //글자색 예외 코드...어두운 색상을 자동으로 인식하게 할 수 있을까?
                 }}>
-                <div className="feature-element">
-                    {this.renderContent()}
-                </div>
+                {this.renderContent()}
             </div>
         );
     }

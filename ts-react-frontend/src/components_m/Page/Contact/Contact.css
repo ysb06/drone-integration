@@ -1,0 +1,31 @@
+#page-contact img {
+    max-width: 100%;
+}
+
+#page-contact .contact-main-container {
+    max-width: 1130px;
+    margin: 100px auto;
+    display: flex;
+}
+
+#page-contact .contact-main-image {
+    width: 100%;
+    margin-left: 32px;
+}
+
+@media (max-width: 1275px) {
+    #page-contact {
+        width: 95%;
+    }
+
+    #page-contact .contact-main-container {
+        margin: 50px auto;
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    #page-contact .contact-main-image {
+        margin: 32px auto;
+    }
+}

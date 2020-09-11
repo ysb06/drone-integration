@@ -21,7 +21,7 @@ class List extends Component<IListProps> {
 
     render() {
         return (
-            <div className="page-element">
+            <div className="list">
                 {this.props.title ? <h2>{this.props.title}</h2> : <Fragment></Fragment>}
                 <div className="list-content">
                     <ul>

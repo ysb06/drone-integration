@@ -9,9 +9,9 @@ const CompanyInfo: React.FC = () => {
                 <div className="company-name">에이치디아이랩</div>
                 <hr />
                     <div className="company-details">
-                        031-290-7619<br />
-                        경기도 수원시 장안구 일월로 40 (성균관대학교) 제 2공학관 4층 26411호<br />
-                        sangminkim06@gmail.com
+                        <p>031-290-7619</p>
+                        <p>경기도 수원시 장안구 일월로 40 (성균관대학교) 제 2공학관 4층 26411호<br /></p>
+                        <p>silee7601@gmail.com</p>
                     </div>
                 <hr />
             </div>
