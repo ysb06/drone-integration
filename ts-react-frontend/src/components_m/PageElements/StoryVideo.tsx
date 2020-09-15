@@ -16,7 +16,7 @@ class StroyVideo extends Component<IStoryVideoProps> {
                         title="drone-jacket"
                         width={this.props.width ? this.props.width : ""}
                         height={this.props.height ? this.props.height : ""}
-                        src={this.props.src}
+                        src={this.props.src + "?rel=0"}
                         frameBorder={0}
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                     <div className="media-title">{this.props.title ? this.props.title : ""}</div>

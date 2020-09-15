@@ -76,6 +76,11 @@
         max-width: 100%;
     }
 
+    #page .story-multi-image-content {
+        max-width: 100%;
+        flex-direction: column;
+    }
+
     #page .media-title {
         font-size: 0.8rem;
     }

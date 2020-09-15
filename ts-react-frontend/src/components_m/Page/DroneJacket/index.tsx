@@ -16,7 +16,7 @@ const DroneJacket: React.FC = () => {
             </section>
             <section>
                 <Summary
-                    content="Drone Jacket은 드론 본체에 씌울 수 있는 스킨 커버로서 표준 나사를 통해 드론에 다양한 액서사리를 추가할 수 있고 드론을 새로운 모습으로 꾸밀 수 있습니다."
+                    content="드론 재킷은 드론 본체에 씌울 수 있는 스킨 커버로서 표준 나사를 통해 드론에 다양한 액세서리를 추가할 수 있고 드론을 새로운 모습으로 꾸밀 수 있습니다."
                     pictureSrc="image/optimized/drone-jacket/page-jacket-1.png"
                     buttonText="구매하러 가기"
                     linkTo="https://www.wadiz.kr/web/campaign/detail/72456?utm_source=wadizshare_in&utm_medium=url"

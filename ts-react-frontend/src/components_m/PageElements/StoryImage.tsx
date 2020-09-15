@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
-interface IStoryImageProps {
+export interface IStoryImageProps {
     src: string,
     title?: string,
     alt?: string
@@ -12,7 +12,7 @@ class StoryImage extends Component<IStoryImageProps> {
         return (
             <div className="story-image">
                 <img src={this.props.src} alt={this.props.alt ? this.props.alt : "story-image"} />
-                <div className="media-title">{this.props.title ? this.props.title : ""}</div>
+                {this.props.title ? <div className="media-title">{this.props.title}</div> : <Fragment />}
             </div>
         );
     }

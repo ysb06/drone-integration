@@ -70,6 +70,7 @@ main {
 
 #page .summary-content img, #page .summary-content video {
     max-width: 40%;
+    max-height: 40vh;
     margin: 0 5%;
 }
 
@@ -319,14 +320,14 @@ main {
 
 /* Story */
 #page .story {
-    margin: 0 0 20vh 0;
+    margin: 0 0 10rem 0;
 }
 
 #page .story-title {
     text-align: center;
     line-height: 200%;
     /* Line Height와 아래 margin 사이 검토 필요 */
-    margin-top: 16vh;
+    margin-top: calc(5rem + 5vh);
 }
 
 #page .story-title h3::before {
@@ -351,7 +352,7 @@ main {
 }
 
 #page .story-text {
-    margin: 1vw;
+    margin-bottom: 1rem;
 }
 
 #page .story-text p {
@@ -359,24 +360,40 @@ main {
 }
 
 #page .media-title {
-    margin: 1vh 0;
+    margin: 2vh 0;
     font-size: 1.25rem;
     text-align: center;
     font-weight: bold;
 }
 
-#page .story-image, #page .story-video {
-    margin-bottom: 3vh;
+#page .story-image, #page .story-video, #page .story-multi-image {
+    margin: 0 auto 2.5rem auto;
 }
 
 #page .story-image img {
-    max-width: 70%;
-    margin: 2vh auto 1vh auto;
+    max-width: 75%;
+    max-height: 512px;
     display: block;
+    margin: auto;
+}
+
+#page .story-multi-image-content {
+    max-width: 75%;
+    margin: 0 auto;
+
+    display: flex;
+}
+
+#page .story-multi-image-content .story-image {
+    margin: 0.5rem 0 0 0;
+}
+
+#page .story-multi-image-content .story-image img {
+    max-width: 95%;
 }
 
 #page .story-video video {
-    max-width: 70%;
+    max-width: 75%;
     margin: 0 auto;
 }
 
