@@ -9,7 +9,7 @@ const Home: React.FC = () => {
         <main id="page-home">
             {videoVisible ?
                 <div className="video-player" onClick={() => { setVideoVisible(false) }}>
-                    <iframe title="drone-jacket" src="https://www.youtube.com/embed/5o-l5vjOavA?amp;autoplay=1" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe title="drone-jacket" src="https://www.youtube.com/embed/5o-l5vjOavA?rel=0&autoplay=1" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
                 : <Fragment />
             }
