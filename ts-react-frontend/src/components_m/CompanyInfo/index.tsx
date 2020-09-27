@@ -18,7 +18,7 @@ const CompanyInfo: React.FC = () => {
             <div className="language-selector">
                 Language:
                     <form>
-                    <select defaultValue={navigator.language === 'ko' || navigator.language === 'ko-KR'? '한국어' : 'English'}>
+                    <select defaultValue={navigator.language === 'ko' || navigator.language === 'ko-KR'? '한국어' : 'English'} onChange={(event: React.ChangeEvent<HTMLSelectElement>) => {console.log('change!' + event.target.value)}}>
                         <option>English</option>
                         <option>한국어</option>
                     </select>
