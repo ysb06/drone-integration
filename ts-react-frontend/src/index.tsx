@@ -7,8 +7,6 @@ import './index.css';
 import './components_m/PageElements/PageElements.css'
 import './components_m/PageElements/PageElements-mobile.css'
 
-// eslint-disable-next-line
-import Router from './Routes_old';
 import App from './App';
 
 ReactDOM.render(

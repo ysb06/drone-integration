@@ -31,7 +31,7 @@ const Home: React.FC = () => {
                     </Link>
                     <Link to="/pick-it" onClick={() => { window.scrollTo(0, 0) }}>
                         <div className="representative-item">
-                            <img src="image/raw/main/page-main-3.gif" alt="Pick it" /><br />
+                            <img src="image/page-main-3.gif" alt="Pick it" /><br />
                             <p>Pick it!</p>
                         </div>
                     </Link>
