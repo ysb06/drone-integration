@@ -1,0 +1,4 @@
+#page .image-section-content img, #page .image-section-content video {
+    max-width: 100%;
+    margin: 0;
+}

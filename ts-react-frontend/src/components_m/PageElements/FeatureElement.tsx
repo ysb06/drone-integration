@@ -19,7 +19,8 @@ export interface IFeatureElementProps {
     videoSrc?: string,
     videoAutoPlay?: boolean,
     style?: {
-        color?: FeatureStyleColor
+        backgroundColor?: FeatureStyleColor | string
+        fontColor?: FeatureStyleColor | string
         form?: FeatureStyleForm
     }
 }
@@ -69,11 +70,8 @@ class FeatureElement extends Component<IFeatureElementProps> {
         return (
             <div className="feature-background"
                 style={{
-                    backgroundColor: this.props.style?.color?.toString(),
-                    color:
-                        this.props.style?.color === FeatureStyleColor.Dark ||
-                            this.props.style?.color === FeatureStyleColor.Black
-                            ? "whitesmoke" : undefined
+                    backgroundColor: this.props.style?.backgroundColor?.toString(),
+                    color: this.props.style?.fontColor
                     //글자색 예외 코드...어두운 색상을 자동으로 인식하게 할 수 있을까?
                 }}>
                 {this.renderContent()}

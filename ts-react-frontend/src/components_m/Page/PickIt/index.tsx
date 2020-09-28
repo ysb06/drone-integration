@@ -32,7 +32,7 @@ const PickIt: React.FC = () => {
                     content="드론이 낯선 사람도, 직접 체험하면서 즐겨보세요!"
                     videoSrc="video/page-pickit-02.mp4" videoAutoPlay={true}
                     style={{
-                        color: FeatureStyleColor.White,
+                        backgroundColor: FeatureStyleColor.White,
                         form: FeatureStyleForm.normal
                     }}
                 />
@@ -41,7 +41,8 @@ const PickIt: React.FC = () => {
                     content="연령 또는 장애나 신체적 제한 없이, 남녀노소 누구나 쉽게 즐길 수 있습니다. 실내외 구분없이 어디서든 즐길 수 있습니다."
                     videoSrc="video/page-pickit-03.mp4" videoAutoPlay={true}
                     style={{
-                        color: FeatureStyleColor.Dark,
+                        backgroundColor: FeatureStyleColor.Dark,
+                        fontColor: FeatureStyleColor.White,
                         form: FeatureStyleForm.reversed
                     }}
                 />
@@ -50,7 +51,7 @@ const PickIt: React.FC = () => {
                     content="그냥 단순한 인형뽑기로 보이시나요? D, Pick it은 혼자서(Solo), 또는 여러명이 경쟁하면서(Duel) 다양한 즐거움을 선사합니다."
                     videoSrc="video/page-pickit-04.mp4" videoAutoPlay={true}
                     style={{
-                        color: FeatureStyleColor.Gray,
+                        backgroundColor: FeatureStyleColor.Gray,
                         form: FeatureStyleForm.normal
                     }}
                 />
@@ -126,9 +127,6 @@ const PickIt: React.FC = () => {
                     }
                     pictureSrc="image/page-pickit-5.png"
                 />
-            </section>
-            <section>
-
             </section>
         </main>
     );

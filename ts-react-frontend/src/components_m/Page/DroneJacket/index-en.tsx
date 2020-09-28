@@ -30,7 +30,7 @@ const DroneJacket: React.FC = () => {
                     style={
                         //Todo: 사진 수정 필요 -> 라이트나 카메라가 달려있는 사진으로 변경할 것, 현재는 배경 제거한 사진이 없어 예전 사진 그대로 사용
                         {
-                            color: FeatureStyleColor.LightBlue,
+                            backgroundColor: FeatureStyleColor.LightBlue,
                             form: FeatureStyleForm.normal
                         }}
                 />
@@ -41,7 +41,7 @@ const DroneJacket: React.FC = () => {
                     style={
                         //Todo: 사진 수정 필요 -> 금색 또는 검은색 커버, 위와 마찬가지 이유로 예전 사진 그대로 사용
                         {
-                            color: FeatureStyleColor.Gray,
+                            backgroundColor: FeatureStyleColor.Gray,
                             form: FeatureStyleForm.reversed
                         }}
                 />
@@ -50,7 +50,7 @@ const DroneJacket: React.FC = () => {
                     content="Go on an adventure with your figurine aboard the drone."
                     pictureSrc="image/optimized/drone-jacket/page-jacket-4.png"
                     style={{
-                        color: FeatureStyleColor.Black,
+                        backgroundColor: FeatureStyleColor.Black,
                         form: FeatureStyleForm.normal
                     }}
                 />
@@ -59,7 +59,7 @@ const DroneJacket: React.FC = () => {
                     content="드론을 손상시키지 않고도 문자나 심볼을 표현할 수 있습니다."
                     pictureSrc="image/optimized/drone-jacket/page-jacket-5.png"
                     style={{
-                        color: FeatureStyleColor.LightBlue,
+                        backgroundColor: FeatureStyleColor.LightBlue,
                         form: FeatureStyleForm.reversed
                     }}
                 />

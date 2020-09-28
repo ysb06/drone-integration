@@ -1,0 +1,11 @@
+#page-droina-edu img {
+    padding: 32px;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+
+#page-droina-edu .feature-element img, #page-droina-edu .feature-element-rev img {
+    padding: unset;
+    box-sizing: unset;
+    background-color: unset;
+}
