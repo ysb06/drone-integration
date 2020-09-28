@@ -24,6 +24,7 @@ const PickIt: React.FC = () => {
                     content="드론 인형뽑기 D, Pick It은 드론으로 하는 신개념 인형 뽑기 게임입니다. 드론에 달린 집게로 인형을 뽑으면서 드론 조종에 대한 다양한 경험을 즐길 수 있습니다."
                     videoSrc="video/page-pickit-main.mp4" videoAutoPlay={true}
                     buttonText="문의하기"
+                    onClick={() => alert('에이치디아이랩\n\n031-290-7619\n경기도 수원시 장안구 일월로 40 (성균관대학교) 제 2공학관 4층 26411호\nsilee7601@gmail.com')}
                 />
             </section>
             <section className="section-wide">
@@ -85,6 +86,7 @@ const PickIt: React.FC = () => {
                     content="HDI Lab. 은 드론 인형뽑기 D, Pick it 전용 집게인 Pick it Claw를 개발 및 제작하여 판매하고 있습니다."
                     buttonText="구매 문의"
                     pictureSrc="image/page-pickit-2.png"
+                    onClick={() => alert('에이치디아이랩\n\n031-290-7619\n경기도 수원시 장안구 일월로 40 (성균관대학교) 제 2공학관 4층 26411호\nsilee7601@gmail.com')}
                 />
             </section>
             <section>

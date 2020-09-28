@@ -44,6 +44,7 @@ const DroniaEdu: React.FC = () => {
                         //Todo: 사진 수정 필요 -> 금색 또는 검은색 커버, 위와 마찬가지 이유로 예전 사진 그대로 사용
                         {
                             backgroundColor: "#867A6C",
+                            fontColor: FeatureStyleColor.White,
                             form: FeatureStyleForm.reversed
                         }}
                 />
@@ -109,7 +110,7 @@ const DroniaEdu: React.FC = () => {
                 />
             </section>
             <section>
-                <Summary title="교재 상세 자료" content="아래 링크에서 교육 상세 내용을 확인하세요" buttonText="다운로드"/>
+                <Summary title="교재 상세 자료" content="아래 링크에서 교육 상세 내용을 확인하세요" buttonText="다운로드" onClick={() => alert('준비 중 입니다.')}/>
             </section>
             <EmptyBox />
         </main>

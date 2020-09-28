@@ -20,6 +20,7 @@ const DroneJacket: React.FC = () => {
                     pictureSrc="image/optimized/drone-jacket/page-jacket-1.png"
                     buttonText="구매하러 가기"
                     linkTo="https://www.wadiz.kr/web/campaign/detail/72456?utm_source=wadizshare_in&utm_medium=url"
+                    onClick={() => alert('펀딩은 종료되었지만 아래 회사 연락처로 구매 문의주시면 친절하게 상담드리겠습니다.')}
                 />
             </section>
             <section className="section-wide">
@@ -107,6 +108,7 @@ const DroneJacket: React.FC = () => {
                     subtitle="Upgrade your drone"
                     buttonText="구매하기"
                     linkTo="https://www.wadiz.kr/web/campaign/detail/72456?utm_source=wadizshare_in&utm_medium=url"
+                    onClick={() => alert('펀딩은 종료되었지만 아래 회사 연락처로 구매 문의주시면 친절하게 상담드리겠습니다.')}
                 />
             </section>
         </main>
