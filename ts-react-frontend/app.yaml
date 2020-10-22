@@ -1,10 +1,28 @@
 runtime: nodejs12
 
 handlers:
-- url: /
+# Serve all static files with url ending with a file extension
+- url: /(.*\..+)$
+  static_files: build/\1
+  upload: build/(.*\..+)$
+  
+# Catch all handler to index.html
+- url: /.*
   static_files: build/index.html
   upload: build/index.html
 
-- url: /(.*)
-  static_files: build/\1
-  upload: build/(.*)
+#- url: /
+#  static_files: build/index.html
+#  upload: build/index.html
+
+#- url: /(.*\.(gif|png|jpg|js|json|html|txt|mp4|css|ttf|map|mp3|svg))$
+#  static_files: build/\1
+#  upload: build/.*\.(gif|png|jpg|js|json|html|txt|mp4|css|ttf|map|mp3|svg)$
+
+#- url: /drone-jacket
+#  static_files: build/index.html
+#  upload: build/index.html
+
+#- url: /(.*)
+  #static_files: build/\1
+  #upload: build/(.*)

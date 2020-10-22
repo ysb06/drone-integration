@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import Title from '../../PageElements/Title';
 import Summary from '../../PageElements/Summary';
 import EmptyBox from '../../PageElements/EmptyBox';
@@ -7,15 +7,18 @@ import './DroniaEdu.css';
 import FeatureElement, { FeatureStyleColor, FeatureStyleForm } from '../../PageElements/FeatureElement';
 import ImageSection from '../../PageElements/ImageSection';
 import List from '../../PageElements/List';
+import NewWindow from 'react-new-window';
+import LectureMovie from '../../LectureMovie';
 
 const DroniaEdu: React.FC = () => {
+    const [lecturePopupVisible, setLecturePopupVisible] = useState<boolean>(false);
     return (
         <main id="page-droina-edu">
             <section>
                 <Title mainTitleText="Dronia Edu" subTitleText="Learn & play with Drones" />
             </section>
             <section>
-                <Summary title="드론을 활용할 수 있는 아두이노 교육용 키트"
+                <Summary title="아두이노 코딩으로 제작할 수 있는 드론 IoT 액세서리"
                     content="
                     본 키트를 통하여 드론에 장착 가능한 Pick it Claw를 제작해 봄으로서 
                     고급의 아두이노 및 코딩 지식을 배우고 
@@ -25,8 +28,12 @@ const DroniaEdu: React.FC = () => {
             </section>
             <section className="section-wide">
                 <FeatureElement
-                    title="드론에 연결해서 하늘로 날려보세요!"
-                    content="드론에 장착되어 날아다니는 와중에도 완벽하게 작동합니다."
+                    title="IoT 전반에 대해서 공부합니다"
+                    listContent={[
+                        "사물 인터넷은 무엇인가?",
+                        "사물 인터넷은 왜 필요한가?",
+                        "사물 인터넷은 어디에 사용되는가?"
+                    ]}
                     pictureSrc="image/optimized/dronia-edu/page-dronia-2.png"
                     style={
                         //Todo: 사진 수정 필요 -> 라이트나 카메라가 달려있는 사진으로 변경할 것, 현재는 배경 제거한 사진이 없어 예전 사진 그대로 사용
@@ -37,8 +44,13 @@ const DroniaEdu: React.FC = () => {
                         }}
                 />
                 <FeatureElement
-                    title="집게를 마음대로 움직여 보세요!"
-                    content="제대로 조립했다면 당신이 만든 Claw를 마음대로 조작할 수 있는 성취감을 맛볼 수 있습니다."
+                    title="IoT의 구성 방법을 공부합니다"
+                    listContent={[
+                        "전류, 전압 저항 그리고 회로",
+                        "센서와 엑츄에이터의 역할",
+                        "아두이노 보드에서의 회로 구성",
+                        "무선 통신"
+                    ]}
                     pictureSrc="image/optimized/dronia-edu/page-dronia-3.png"
                     style={
                         //Todo: 사진 수정 필요 -> 금색 또는 검은색 커버, 위와 마찬가지 이유로 예전 사진 그대로 사용
@@ -49,8 +61,12 @@ const DroniaEdu: React.FC = () => {
                         }}
                 />
                 <FeatureElement
-                    title="원하는 물건을 집고 올려보세요!"
-                    content="인형뽑기의 재미를 드론으로도 마음껏 즐길 수 있습니다."
+                    title="아두이노 코딩을 통한 IoT 규칙 설정을 공부합니다."
+                    listContent={[
+                        "코딩, 프로그래밍의 기초",
+                        "핀 설정과 모터 연결",
+                        "센서와 엑츄에이터 조작 프로그래밍",
+                    ]}
                     pictureSrc="image/optimized/dronia-edu/page-dronia-4.png"
                     style={{
                         backgroundColor: "#F0CAB6",
@@ -58,8 +74,12 @@ const DroniaEdu: React.FC = () => {
                     }}
                 />
                 <FeatureElement
-                    title="조종기만 있으면 멀리서도 가능해요!"
-                    content="드론 조정과 유사하게 조작이 가능합니다."
+                    title="IoT 액세서리를 드론과 연결합니다."
+                    listContent={[
+                        "드론 택배 서비스의 활용",
+                        "드론 액세서리를 이용한 서비스 구성",
+                        "드론 액세서리를 이용한 엔터테인먼트",
+                    ]}
                     pictureSrc="image/optimized/dronia-edu/page-dronia-5.png"
                     style={{
                         backgroundColor: "#F3DFBA",
@@ -110,11 +130,37 @@ const DroniaEdu: React.FC = () => {
                 />
             </section>
             <section>
-                <Summary title="교재 상세 자료" content="아래 링크에서 교육 상세 내용을 확인하세요" buttonText="다운로드" onClick={() => alert('준비 중 입니다.')}/>
+                <Summary
+                    title="교재 상세 자료"
+                    content="아래 링크에서 교육 상세 내용을 확인하세요"
+                    buttonText="다운로드"
+                    linkTo="https://storage.googleapis.com/hdi-integration.appspot.com/hdi-edukit-1.pdf" />
+                <Summary
+                    title="강의 영상 자료"
+                    content="아래 링크에서 교육 상세 내용을 확인하세요"
+                    buttonText="동영상 보기"
+                    onClick={showLecturePopup} />
             </section>
+
+            {
+                lecturePopupVisible ?
+                    <NewWindow onUnload={hideLecturePopup} features={{width: 800, height: 600}}>
+                        <LectureMovie />
+                    </NewWindow>
+                    : <Fragment />
+            }
+
             <EmptyBox />
         </main>
     );
+
+    function showLecturePopup() {
+        setLecturePopupVisible(true);
+    }
+
+    function hideLecturePopup() {
+        setLecturePopupVisible(false);
+    }
 }
 
 export default DroniaEdu;

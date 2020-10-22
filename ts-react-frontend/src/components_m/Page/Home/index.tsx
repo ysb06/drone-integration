@@ -17,7 +17,7 @@ const Home: React.FC = () => {
                 <div className="catchphrase-container">
                     <h1 className="catchphrase-title">Drone Jacket</h1>
                     <div className="catchphrase-subtitle">Upgrade your drone</div>
-                    <div className="video-button" onClick={() => { setVideoVisible(true)}}><p>Watch Video ▶</p></div>
+                    <div className="video-button" onClick={() => { setVideoVisible(true) }}><p>Watch Video ▶</p></div>
                 </div>
             </div>
             <div className="representative-goods">

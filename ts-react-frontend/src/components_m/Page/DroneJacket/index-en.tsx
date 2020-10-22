@@ -8,7 +8,7 @@ import Story from './Story';
 
 import './DroneJacket.css';
 
-const DroneJacket: React.FC = () => {
+const DroneJacketEn: React.FC = () => {
     return (
         <main id="page-drone-jacket">
             <section>
@@ -112,4 +112,4 @@ const DroneJacket: React.FC = () => {
     );
 }
 
-export default DroneJacket;
+export default DroneJacketEn;

@@ -66,10 +66,17 @@
         text-align: center;
     }
 
+    #page .feature-element-text ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
     #page .feature-element-media {
         width: 90%;
         height: fit-content;
     }
+    
 
     /* Story */
     #page .story-image img {

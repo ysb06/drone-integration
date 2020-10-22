@@ -139,6 +139,10 @@ main {
     justify-content: center;
 }
 
+#page .feature-element-text li {
+    line-height: 160%;
+}
+
 #page .feature-element-media {
     width: 45%;
     height: 100%;

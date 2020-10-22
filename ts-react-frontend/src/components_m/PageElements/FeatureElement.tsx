@@ -14,7 +14,8 @@ export enum FeatureStyleForm {
 
 export interface IFeatureElementProps {
     title: string,
-    content: string,
+    content?: string,
+    listContent?: string[],
     pictureSrc?: string,
     videoSrc?: string,
     videoAutoPlay?: boolean,
@@ -32,12 +33,12 @@ class FeatureElement extends Component<IFeatureElementProps> {
         } else if (this.props.videoSrc) {
             return (<video src={this.props.videoSrc} autoPlay={this.props.videoAutoPlay} loop />)
         } else {
-            return (<Fragment></Fragment>);
+            return (<Fragment />);
         }
     }
 
     renderContent(): JSX.Element {
-        switch(this.props.style?.form) {
+        switch (this.props.style?.form) {
             case FeatureStyleForm.reversed:
                 return (
                     <div className="feature-element-rev">
@@ -46,7 +47,7 @@ class FeatureElement extends Component<IFeatureElementProps> {
                         </div>
                         <div className="feature-element-text">
                             <h3>{this.props.title}</h3>
-                            <p>{this.props.content}</p>
+                            {this.props.content ? <p>{this.props.content}</p> : this.getListContent(this.props.listContent)}
                         </div>
                     </div>
                 );
@@ -59,11 +60,19 @@ class FeatureElement extends Component<IFeatureElementProps> {
                         </div>
                         <div className="feature-element-text">
                             <h3>{this.props.title}</h3>
-                            <p>{this.props.content}</p>
+                            {this.props.content ? <p>{this.props.content}</p> : this.getListContent(this.props.listContent)}
                         </div>
                     </div>
                 );
         }
+    }
+
+    getListContent(list: string[] | undefined): JSX.Element {
+        return (
+            <ul>
+                { list ? list.map((value, index) => <li key={index}>{value}</li>) : <Fragment />}
+            </ul>
+        );
     }
 
     render() {

@@ -1,0 +1,12 @@
+#page-fallback {
+    width: 100%;
+    height: calc(90vh - 328px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page-fallback .fallback-message {
+    text-align: center;
+}

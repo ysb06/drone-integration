@@ -15,6 +15,7 @@ const CompanyInfo: React.FC = () => {
                     </div>
                 <hr />
             </div>
+            {/*
             <div className="language-selector">
                 Language:
                     <form>
@@ -24,6 +25,7 @@ const CompanyInfo: React.FC = () => {
                     </select>
                 </form>
             </div>
+             */}
         </div>
     );
 }
