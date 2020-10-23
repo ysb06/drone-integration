@@ -2,12 +2,11 @@ import React from 'react';
 import './HeaderMenu.css'
 
 interface IHeaderMenuProps {
-    parentPath: string,
     onMenuClick?: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void
 }
 
 const HeaderMenu: React.FC<IHeaderMenuProps> = (props: IHeaderMenuProps) => {
-    const urlFactors: string[] = props.parentPath.split('/');
+    const urlFactors: string[] = window.location.href.split('/');
     return (
         <div className="header-menu">
             <div className="header-menu-side-button-container">

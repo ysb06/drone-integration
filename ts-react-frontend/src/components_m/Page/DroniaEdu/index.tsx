@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import Title from '../../PageElements/Title';
 import Summary from '../../PageElements/Summary';
 import EmptyBox from '../../PageElements/EmptyBox';
@@ -9,6 +9,7 @@ import ImageSection from '../../PageElements/ImageSection';
 import List from '../../PageElements/List';
 import NewWindow from 'react-new-window';
 import LectureMovie from '../../LectureMovie';
+import PageButton from '../../PageElements/PageButton';
 
 const DroniaEdu: React.FC = () => {
     const [lecturePopupVisible, setLecturePopupVisible] = useState<boolean>(false);
@@ -130,21 +131,24 @@ const DroniaEdu: React.FC = () => {
                 />
             </section>
             <section>
-                <Summary
-                    title="교재 상세 자료"
-                    content="아래 링크에서 교육 상세 내용을 확인하세요"
-                    buttonText="다운로드"
-                    linkTo="https://storage.googleapis.com/hdi-integration.appspot.com/hdi-edukit-1.pdf" />
-                <Summary
-                    title="강의 영상 자료"
-                    content="아래 링크에서 교육 상세 내용을 확인하세요"
-                    buttonText="동영상 보기"
-                    onClick={showLecturePopup} />
+                <h2>참고 자료</h2>
+                <div className="dronia-edu-materials">
+                    <div className="dronia-edu-materials-element">
+                        <div><img src="/image/optimized/dronia-edu/page-dronia-11.svg" alt="Materials Icon"/></div>
+                        <h3>교육 교재</h3>
+                        <div className="materials-button-container"><PageButton text="다운로드" linkTo="https://storage.googleapis.com/hdi-integration.appspot.com/hdi-edukit-1.pdf"/></div>
+                    </div>
+                    <div className="dronia-edu-materials-element">
+                        <div><img src="/image/optimized/dronia-edu/page-dronia-12.svg" alt="Materials Icon"/></div>
+                        <h3>지난 강의 영상</h3>
+                        <div className="materials-button-container"><PageButton text="동영상 보기" onClick={showLecturePopup}/></div>
+                    </div>
+                </div>
             </section>
 
             {
                 lecturePopupVisible ?
-                    <NewWindow onUnload={hideLecturePopup} features={{width: 800, height: 600}}>
+                    <NewWindow onUnload={hideLecturePopup} features={{ width: 960, height: 540 }}>
                         <LectureMovie />
                     </NewWindow>
                     : <Fragment />

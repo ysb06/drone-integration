@@ -9,3 +9,25 @@
     box-sizing: unset;
     background-color: unset;
 }
+
+#page-droina-edu .dronia-edu-materials {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+#page-droina-edu .dronia-edu-materials img {
+    width: 128px;
+    padding: 0;
+    background-color: unset;
+}
+
+#page-droina-edu .dronia-edu-materials-element {
+    text-align: center;
+}
+
+#page-droina-edu .materials-button-container {
+    width: fit-content;
+    margin: 0 auto;
+}
