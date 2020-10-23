@@ -9,7 +9,7 @@ let videoSrcState: [string | undefined, React.Dispatch<React.SetStateAction<stri
 //추후 YouTube Player API로 바꾸어 수정
 //Related Video 관련 사용자 동작에 대한 반응을 위한 것
 const LectureMovie: React.FC = () => {
-    sideMenuVisibleState = useState<boolean>(false);
+    sideMenuVisibleState = useState<boolean>(true);
     videoSrcState = useState<string>();
 
     return (

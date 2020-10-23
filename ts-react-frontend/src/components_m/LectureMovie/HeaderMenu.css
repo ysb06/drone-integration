@@ -7,7 +7,7 @@
     display: flex;
     background-color: var(--top-theme-color);
 
-    font-size: 2rem;
+    font-size: 4vh;
     color: aliceblue;
 }
 
@@ -21,13 +21,16 @@
 }
 
 .header-menu-side-button {
-    width: 5vmin;
-    height: 5vmin;
-    border-radius: 2.5vmin;
+    width: 10vmin;
+    height: 10vmin;
 
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.header-menu-side-button img {
+    width: 50%;
 }
 
 .header-menu-side-button:hover {
@@ -35,6 +38,8 @@
 }
 
 .header-menu .header-menu-title {
+    padding-left: 32px;
+
     flex-grow: 1;
 
     display: flex;

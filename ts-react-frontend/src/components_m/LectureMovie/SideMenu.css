@@ -1,5 +1,5 @@
 .lecture-movie-side-menu {
-    width: 320px;
+    width: 480px;
 
     overflow-y: auto;
 
@@ -14,6 +14,7 @@
     align-items: center;
     
     word-break: keep-all;
+    cursor: pointer;
 }
 
 .lecture-movie-side-menu-element-selected {

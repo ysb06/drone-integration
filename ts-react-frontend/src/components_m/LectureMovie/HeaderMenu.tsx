@@ -14,7 +14,7 @@ const HeaderMenu: React.FC<IHeaderMenuProps> = (props: IHeaderMenuProps) => {
                     <img src={urlFactors[0] + "//" + urlFactors[2] + "/image/optimized/lecture-movie/Hamburger.png"} alt="Menu" />
                 </div>
             </div>
-            <div className="header-menu-title"><span>강의 다시보기</span></div>
+            <div className="header-menu-title">강의 다시보기</div>
         </div>
     );
 }
