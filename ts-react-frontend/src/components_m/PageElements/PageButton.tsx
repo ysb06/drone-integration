@@ -32,7 +32,7 @@ class PageButton extends Component<IPageButtonProps> {
         return (
             <div className="page-button">
                 {this.props.linkTo ?
-                    <a href={this.props.linkTo} target="_Blank">
+                    <a href={this.props.linkTo}>
                         {this.buttonView}
                     </a> 
                     :
