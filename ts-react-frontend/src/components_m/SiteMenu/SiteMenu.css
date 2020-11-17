@@ -70,7 +70,7 @@
     display: flex;
 }
 
-@media (max-width: 1275px) {
+@media (max-width: 1152px) {
     .site-menu a {
         font-size: 2rem;
     }

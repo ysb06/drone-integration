@@ -37,7 +37,7 @@ const DroniaEdu: React.FC = () => {
                     ]}
                     pictureSrc="image/optimized/dronia-edu/page-dronia-2.png"
                     style={
-                        //Todo: 사진 수정 필요 -> 라이트나 카메라가 달려있는 사진으로 변경할 것, 현재는 배경 제거한 사진이 없어 예전 사진 그대로 사용
+                        //Todo: 사진 수정 필요 -> 아래 3개 사진 바꾸기!!!!!!
                         {
                             backgroundColor: "#425059",
                             fontColor: FeatureStyleColor.White,
@@ -51,7 +51,7 @@ const DroniaEdu: React.FC = () => {
                         "센서와 엑츄에이터의 역할",
                         "아두이노 보드에서의 회로 구성",
                         "무선 통신"
-                    ]}
+                    ]} 
                     pictureSrc="image/optimized/dronia-edu/page-dronia-3.png"
                     style={
                         //Todo: 사진 수정 필요 -> 금색 또는 검은색 커버, 위와 마찬가지 이유로 예전 사진 그대로 사용
@@ -68,7 +68,7 @@ const DroniaEdu: React.FC = () => {
                         "핀 설정과 모터 연결",
                         "센서와 엑츄에이터 조작 프로그래밍",
                     ]}
-                    pictureSrc="image/optimized/dronia-edu/page-dronia-4.png"
+                    pictureSrc="image/optimized/dronia-edu/page-dronia-7.png"
                     style={{
                         backgroundColor: "#F0CAB6",
                         form: FeatureStyleForm.normal
