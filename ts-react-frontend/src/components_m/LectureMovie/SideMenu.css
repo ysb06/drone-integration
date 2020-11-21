@@ -1,5 +1,6 @@
 .lecture-movie-side-menu {
     width: 480px;
+    height: 100%;
 
     overflow-y: auto;
 
