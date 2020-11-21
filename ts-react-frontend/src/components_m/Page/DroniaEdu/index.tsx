@@ -131,12 +131,23 @@ const DroniaEdu: React.FC = () => {
                 />
             </section>
             <section>
+                <div className="dronia-edu-result">
+                    <img src="/image/optimized/dronia-edu/page-dronia-13.png" alt="dronia-edu result"/>
+                    <img src="/image/optimized/dronia-edu/page-dronia-14.png" alt="dronia-edu result"/>
+                </div>
+            </section>
+            <section>
                 <h2>참고 자료</h2>
                 <div className="dronia-edu-materials">
                     <div className="dronia-edu-materials-element">
                         <div><img src="/image/optimized/dronia-edu/page-dronia-11.svg" alt="Materials Icon"/></div>
                         <h3>교육 교재</h3>
-                        <div className="materials-button-container"><PageButton text="다운로드" linkTo="https://storage.googleapis.com/hdi-integration.appspot.com/hdi-edukit-1.pdf"/></div>
+                        <div className="materials-button-container">
+                            <PageButton text="PDF 다운로드" linkTo="https://storage.googleapis.com/hdi-integration.appspot.com/hdi-edukit-1.pdf"/>
+                        </div>
+                        <div className="materials-button-container">
+                            <PageButton text="최종모델자료" linkTo="https://storage.googleapis.com/hdi-integration.appspot.com/code_image.zip"/>
+                        </div>
                     </div>
                     <div className="dronia-edu-materials-element">
                         <div><img src="/image/optimized/dronia-edu/page-dronia-12.svg" alt="Materials Icon"/></div>

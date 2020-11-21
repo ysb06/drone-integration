@@ -111,7 +111,7 @@
   background-color: white;
 }
 
-@media (max-width: 1275px) {
+@media (max-width: 1200px) {
   #page-home .catchphrase-title {
     font-size: 3rem;
   }

@@ -14,7 +14,6 @@
     width: 100%;
 
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -22,15 +21,24 @@
     width: 128px;
     padding: 0;
     background-color: unset;
-
 }
 
 #page-droina-edu .dronia-edu-materials-element {
-    margin-top: 32px;
     text-align: center;
 }
 
 #page-droina-edu .materials-button-container {
     width: fit-content;
-    margin: 0 auto;
+    margin: 16px auto;
 }
+
+#page-droina-edu .dronia-edu-result {
+    max-width: 1180px;
+    display: flex;
+}
+
+#page-droina-edu .dronia-edu-result img{
+    width: 45%;
+    background-color: unset;
+}
+

@@ -8,12 +8,28 @@
     display: flex;
 }
 
+#page-contact .contact-main-container h2 {
+    text-align: unset;
+}
+
 #page-contact .contact-main-image {
     width: 100%;
     margin-left: 32px;
 }
 
-@media (max-width: 1275px) {
+#page-contact .contact-address-container {
+    max-width: 1130px;
+    margin: 100px auto;
+}
+
+#page-contact #contact-map {
+    width: 90%;
+    height: 360px;
+    margin: auto;
+    background-color: teal;
+}
+
+@media (max-width: 1200px) {
     #page-contact {
         width: 95%;
     }
