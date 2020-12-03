@@ -20,6 +20,11 @@ const SideMenuElementList: ISideMenuElement[] = [
     { title: "3차시 2020-10-25 [오후반]", src: "https://www.youtube.com/embed/zh4P9h4Aa1Q"},
     { title: "4차시 2020-11-01 [오전반]", src: "https://www.youtube.com/embed/ysaCMCLfDQw"},
     { title: "4차시 2020-11-01 [오후반]", src: "https://www.youtube.com/embed/EIhx2jNMZog"},
+    { title: "5차시 2020-11-08 [오전반]", src: "https://www.youtube.com/embed/JTJ914pKkHk"},
+    { title: "5차시 2020-11-08 [오후반]", src: "https://www.youtube.com/embed/PvhlI0tyxsI"},
+    { title: "6차시 2020-11-15 [오전반]", src: "https://www.youtube.com/embed/gG-6D6roV0U"},
+    { title: "6차시 2020-11-15 [오후반]", src: "https://www.youtube.com/embed/M520SvlUfTo"},
+    { title: "7차시 2020-11-22 [오전반]", src: "https://www.youtube.com/embed/-NjmqZ-Pq8I"},
 ];
 
 const SideMenu: React.FC<ISideMenuProps> = (props: ISideMenuProps) => {
