@@ -4,7 +4,7 @@ import Popup from '../../PopupNotice';
 import './Home.css';
 
 const Home: React.FC = () => {
-    const [videoVisible, setVideoVisible] = useState<Boolean>(false);
+    const [videoVisible, setVideoVisible] = useState<boolean>(false);
 
     return (
         <main id="page-home">
