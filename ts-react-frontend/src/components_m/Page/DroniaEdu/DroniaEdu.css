@@ -35,6 +35,8 @@
 #page-droina-edu .dronia-edu-result {
     max-width: 1180px;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #page-droina-edu .dronia-edu-result img{
@@ -42,3 +44,28 @@
     background-color: unset;
 }
 
+#page-droina-edu .dronia-edu-gallery {
+    width: 100%;
+}
+
+#page-droina-edu .dronia-edu-gallery img {
+    width: 100%;
+}
+
+#page-dronia-edu .dronia-edu-gallery-button {
+    width: 67%;
+    margin: 0 auto;
+}
+
+#page-droina-edu .dronia-edu-gallery-button img:last-child {
+    display: none;
+}
+
+#page-droina-edu .dronia-edu-gallery-button:hover img:first-child {
+    display: none;
+}
+
+#page-droina-edu .dronia-edu-gallery-button:hover img:last-child {
+    display: unset;
+    cursor: pointer;
+}

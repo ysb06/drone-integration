@@ -15,6 +15,7 @@
     "@types/react-router-dom": "^5.1.5",
     "react": "^16.13.1",
     "react-app-polyfill": "^1.0.6",
+    "react-bnb-gallery": "^1.4.4",
     "react-dom": "^16.13.1",
     "react-naver-maps": "^0.0.13",
     "react-new-window": "^0.1.2",

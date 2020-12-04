@@ -1,5 +1,6 @@
 import React, { useState, Fragment } from 'react';
 import { Link } from 'react-router-dom';
+import Popup from '../../PopupNotice';
 import './Home.css';
 
 const Home: React.FC = () => {
@@ -43,6 +44,7 @@ const Home: React.FC = () => {
                     </Link>
                 </div>
             </div>
+            <Popup visible={true}/>
         </main>
     );
 }

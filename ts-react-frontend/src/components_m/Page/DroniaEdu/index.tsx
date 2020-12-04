@@ -1,9 +1,9 @@
 import React, { Fragment, useState } from 'react';
+import ReactBnbGallery from 'react-bnb-gallery';
+
 import Title from '../../PageElements/Title';
 import Summary from '../../PageElements/Summary';
 import EmptyBox from '../../PageElements/EmptyBox';
-
-import './DroniaEdu.css';
 import FeatureElement, { FeatureStyleColor, FeatureStyleForm } from '../../PageElements/FeatureElement';
 import ImageSection from '../../PageElements/ImageSection';
 import List from '../../PageElements/List';
@@ -11,8 +11,21 @@ import NewWindow from 'react-new-window';
 import LectureMovie from '../../LectureMovie';
 import PageButton from '../../PageElements/PageButton';
 
+import './DroniaEdu.css';
+import 'react-bnb-gallery/dist/style.css'
+
+
+const PHOTOS: string[] = new Array<string>(33).fill('').map(
+    (value: string, index: number) =>
+        index < 10 ?
+            '/image/gallery/DreamSchool_0' + index + '.jpg' :
+            '/image/gallery/DreamSchool_' + index + '.jpg'
+);
+
 const DroniaEdu: React.FC = () => {
     const [lecturePopupVisible, setLecturePopupVisible] = useState<boolean>(false);
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
         <main id="page-droina-edu">
             <section>
@@ -51,7 +64,7 @@ const DroniaEdu: React.FC = () => {
                         "센서와 엑츄에이터의 역할",
                         "아두이노 보드에서의 회로 구성",
                         "무선 통신"
-                    ]} 
+                    ]}
                     pictureSrc="image/optimized/dronia-edu/page-dronia-3.png"
                     style={
                         //Todo: 사진 수정 필요 -> 금색 또는 검은색 커버, 위와 마찬가지 이유로 예전 사진 그대로 사용
@@ -132,27 +145,27 @@ const DroniaEdu: React.FC = () => {
             </section>
             <section>
                 <div className="dronia-edu-result">
-                    <img src="/image/optimized/dronia-edu/page-dronia-13.png" alt="dronia-edu result"/>
-                    <img src="/image/optimized/dronia-edu/page-dronia-14.png" alt="dronia-edu result"/>
+                    <img src="/image/optimized/dronia-edu/page-dronia-13.png" alt="dronia-edu result" />
+                    <img src="/image/optimized/dronia-edu/page-dronia-14.png" alt="dronia-edu result" />
                 </div>
             </section>
             <section>
                 <h2>참고 자료</h2>
                 <div className="dronia-edu-materials">
                     <div className="dronia-edu-materials-element">
-                        <div><img src="/image/optimized/dronia-edu/page-dronia-11.svg" alt="Materials Icon"/></div>
+                        <div><img src="/image/optimized/dronia-edu/page-dronia-11.svg" alt="Materials Icon" /></div>
                         <h3>교육 교재</h3>
                         <div className="materials-button-container">
-                            <PageButton text="PDF 다운로드" linkTo="https://storage.googleapis.com/hdi-integration.appspot.com/hdi-edukit-1.pdf"/>
+                            <PageButton text="PDF 다운로드" linkTo="https://storage.googleapis.com/hdi-integration.appspot.com/hdi-edukit-1.pdf" />
                         </div>
                         <div className="materials-button-container">
-                            <PageButton text="최종모델자료" linkTo="https://storage.googleapis.com/hdi-integration.appspot.com/code_image.zip"/>
+                            <PageButton text="최종모델자료" linkTo="https://storage.googleapis.com/hdi-integration.appspot.com/code_image.zip" />
                         </div>
                     </div>
                     <div className="dronia-edu-materials-element">
-                        <div><img src="/image/optimized/dronia-edu/page-dronia-12.svg" alt="Materials Icon"/></div>
+                        <div><img src="/image/optimized/dronia-edu/page-dronia-12.svg" alt="Materials Icon" /></div>
                         <h3>지난 강의 영상</h3>
-                        <div className="materials-button-container"><PageButton text="동영상 보기" onClick={showLecturePopup}/></div>
+                        <div className="materials-button-container"><PageButton text="동영상 보기" onClick={showLecturePopup} /></div>
                     </div>
                 </div>
             </section>
@@ -164,7 +177,32 @@ const DroniaEdu: React.FC = () => {
                     </NewWindow>
                     : <Fragment />
             }
-
+            <section>
+                <h2>꿈의학교 갤러리</h2>
+                <div className="dronia-edu-gallery">
+                    <div className="dronia-edu-gallery-description">
+                        <p>
+                            Dronia Edu 교육의 일환으로 2020년 10월 11일 부터 11월 22일 까지 진행한 경기 꿈의 학교의 아빠와 함께하는 IoT 프로그래밍 실습 과정을 담은 사진들입니다.
+                        </p>
+                        <p>
+                            아래 사진 버튼을 누르면 Dronia Edu가 어떤 모습으로 진행되는지 사진으로 감상할 수 있습니다.
+                        </p>
+                        <p style={{ textAlign: "center" }}>
+                            ↓ 클릭 ↓
+                        </p>
+                    </div>
+                    <div className="dronia-edu-gallery-button">
+                        <img src="/image/optimized/dronia-edu/page-dronia-15.png" alt="Gallery Entry" />
+                        <img src="/image/optimized/dronia-edu/page-dronia-16.png" alt="Gallery Entry" onClick={() => setIsOpen(true)} />
+                    </div>
+                    <ReactBnbGallery
+                        show={isOpen}
+                        photos={PHOTOS}
+                        preloadSize={5}
+                        onClose={() => setIsOpen(false)}
+                    />
+                </div>
+            </section>
             <EmptyBox />
         </main>
     );
