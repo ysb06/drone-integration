@@ -15,7 +15,7 @@ import './DroniaEdu.css';
 import 'react-bnb-gallery/dist/style.css';
 
 
-const PHOTOS: string[] = new Array<string>(45).fill('').map(
+const PHOTOS: string[] = new Array<string>(64).fill('').map(
     (value: string, index: number) =>
         index < 10 ?
             '/image/gallery/DreamSchool_0' + index + '.jpg' :
