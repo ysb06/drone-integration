@@ -19,8 +19,7 @@ const DroneJacket: React.FC = () => {
                     content="드론 재킷은 드론 본체에 씌울 수 있는 스킨 커버로서 표준 나사를 통해 드론에 다양한 액세서리를 추가할 수 있고 드론을 새로운 모습으로 꾸밀 수 있습니다."
                     pictureSrc="image/optimized/drone-jacket/page-jacket-1.png"
                     buttonText="구매하러 가기"
-                    linkTo="https://www.wadiz.kr/web/campaign/detail/72456?utm_source=wadizshare_in&utm_medium=url"
-                    onClick={() => alert('펀딩은 종료되었지만 아래 회사 연락처로 구매 문의주시면 친절하게 상담드리겠습니다.')}
+                    linkTo="http://www.11st.co.kr/products/3452438919?trTypeCd=21&trCtgrNo=585021"
                 />
             </section>
             <section className="section-wide">

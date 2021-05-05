@@ -11,7 +11,7 @@ const CompanyInfo: React.FC = () => {
                     <div className="company-details">
                         <p>031-290-7619</p>
                         <p>경기도 수원시 장안구 일월로 40 (성균관대학교) 제 2공학관 4층 26411호<br /></p>
-                        <p>silee7601@gmail.com</p>
+                        <p>hdilabsme@gmail.com</p>
                     </div>
                 <hr />
             </div>
